@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 import { Github, ExternalLink, GitMerge, GitPullRequest, XCircle, Star, TrendingUp, PieChart as PieChartIcon, BarChart3 } from "lucide-react";
 import { useEffect, useState, useMemo } from "react";
 import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend } from "recharts";
+import { useSearchParams } from "next/navigation";
 import { DataState } from "@/components/ui/empty-state";
+import { FreshnessNote, YearSwitcher } from "@/components/ui/year-switcher";
+import { cohortFromParam } from "@/lib/cohorts";
 
 interface PR {
     title: string;
@@ -51,6 +54,10 @@ interface BreakdownData {
     };
     members: MemberData[];
     lastUpdated: string;
+    year: string;
+    yearLabel: string;
+    source: "live" | "snapshot";
+    generatedAt: string | null;
 }
 
 export function GsocStats() {
@@ -59,10 +66,13 @@ export function GsocStats() {
     const [error, setError] = useState<string | null>(null);
     const [selectedMember, setSelectedMember] = useState<string>('all');
 
+    const searchParams = useSearchParams();
+    const cohort = cohortFromParam(searchParams.get("year"));
+
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch('/api/pr-breakdown');
+                const response = await fetch(`/api/pr-breakdown?year=${cohort.id}`);
                 if (!response.ok) throw new Error('Failed to fetch');
                 const result = await response.json();
                 setData(result);
@@ -73,24 +83,34 @@ export function GsocStats() {
             }
         }
         fetchData();
-    }, []);
+    }, [cohort.id]);
 
-    if (loading || error || !data) {
+    // Derived rather than cleared in the effect, so the previous year group's
+    // breakdown never renders under the new heading while the fetch is in flight.
+    const stale = data !== null && data.year !== cohort.id;
+
+    if (loading || error || !data || stale) {
         return (
             <div className="min-h-screen bg-gradient-to-b from-black via-neutral-950 to-black">
+                <div className="flex justify-center pt-24">
+                    <YearSwitcher />
+                </div>
                 <DataState
                     loading={loading}
                     error={error ? `⚠️ ${error}` : !data ? "⚠️ Failed to load GSoC data" : null}
-                    loadingLabel="Loading GSoC data..."
+                    loadingLabel={`Loading ${cohort.label} GSoC data...`}
                     onRetry={() => window.location.reload()}
                 />
             </div>
         );
     }
 
-    const filteredGsocPRs = selectedMember === 'all'
+    // A member picked in the other year group is not in this list; falling back
+    // to "all" beats rendering an empty breakdown that looks like real data.
+    const activeMember = data.members.some(m => m.github === selectedMember) ? selectedMember : 'all';
+    const filteredGsocPRs = activeMember === 'all'
         ? data.members.flatMap(m => m.gsocPRs)
-        : data.members.find(m => m.github === selectedMember)?.gsocPRs || [];
+        : data.members.find(m => m.github === activeMember)?.gsocPRs || [];
 
     return (
         <section className="py-24 bg-gradient-to-b from-black via-neutral-950 to-black min-h-screen">
@@ -107,6 +127,11 @@ export function GsocStats() {
                     <p className="text-xl text-neutral-400 max-w-2xl mx-auto">
                         PR bifurcation for Google Summer of Code eligible organizations
                     </p>
+                    <div className="mt-8 flex flex-col items-center gap-3">
+                        <YearSwitcher />
+                        <p className="text-sm text-neutral-400">{data.yearLabel} — {cohort.blurb}</p>
+                        <FreshnessNote source={data.source} generatedAt={data.generatedAt} />
+                    </div>
                 </motion.div>
 
                 {/* GSoC PRs Summary - Single Featured Card */}
@@ -414,7 +439,7 @@ export function GsocStats() {
                     <div className="flex justify-between items-center mb-6">
                         <h2 className="text-3xl font-bold text-white">All GSoC PRs</h2>
                         <select
-                            value={selectedMember}
+                            value={activeMember}
                             onChange={(e) => setSelectedMember(e.target.value)}
                             className="bg-neutral-900 border border-neutral-700 text-white px-4 py-2 rounded-lg"
                         >

@@ -13,7 +13,9 @@
         "test:projects": "tsx scripts/test-projects-api.ts",
         "test:portal": "tsx scripts/test-portal-apis.ts",
         "generate-icons": "tsx scripts/generate-pwa-icons.ts",
-        "set:photo": "tsx scripts/set-photo.ts"
+        "set:photo": "tsx scripts/set-photo.ts",
+        "import:cohort": "node scripts/import-cohort-csv.mjs",
+        "snapshot:oss": "tsx scripts/oss-snapshot.ts"
     },
     "dependencies": {
         "bcrypt": "^6.0.0",

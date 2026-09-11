@@ -4,7 +4,10 @@ import { motion } from "framer-motion";
 import { Trophy, TrendingUp, Users, Award, Github, ExternalLink } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { DataState } from "@/components/ui/empty-state";
+import { FreshnessNote, YearSwitcher } from "@/components/ui/year-switcher";
+import { cohortFromParam, DEFAULT_COHORT } from "@/lib/cohorts";
 
 interface Milestone {
     name: string;
@@ -34,6 +37,11 @@ interface TeamStats {
     teamMilestones: Milestone[];
     nextTeamMilestone: NextMilestone | null;
     lastUpdated: string;
+    year: string;
+    yearLabel: string;
+    source: "live" | "snapshot";
+    generatedAt: string | null;
+    contributorCount: number;
 }
 
 export function PRStats() {
@@ -41,10 +49,13 @@ export function PRStats() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
+    const searchParams = useSearchParams();
+    const cohort = cohortFromParam(searchParams.get("year"));
+
     useEffect(() => {
         async function fetchStats() {
             try {
-                const response = await fetch('/api/pr-stats');
+                const response = await fetch(`/api/pr-stats?year=${cohort.id}`);
                 if (!response.ok) throw new Error('Failed to fetch PR stats');
                 const data = await response.json();
                 setStats(data);
@@ -66,15 +77,27 @@ export function PRStats() {
 
         // Cleanup interval on unmount
         return () => clearInterval(refreshInterval);
-    }, []);
+    }, [cohort.id]);
 
-    if (loading || error || !stats) {
+    // While the next year group is still loading, `stats` still holds the last
+    // one. Derived rather than cleared in the effect: clearing would mean a
+    // setState during render-effect, and the question "is this data for the year
+    // the URL asks for?" is answerable from what we already have.
+    const stale = stats !== null && stats.year !== cohort.id;
+
+    if (loading || error || !stats || stale) {
         return (
             <div className="min-h-screen bg-gradient-to-b from-black via-neutral-950 to-black">
+                {/* The switcher stays on screen while loading. Counting the second
+                    year live takes a while, and a spinner with no way back would
+                    trap somebody who picked the wrong year. */}
+                <div className="flex justify-center pt-24">
+                    <YearSwitcher />
+                </div>
                 <DataState
                     loading={loading}
                     error={error ? `⚠️ ${error}` : !stats ? "⚠️ Failed to load stats" : null}
-                    loadingLabel="Loading PR statistics..."
+                    loadingLabel={`Counting ${cohort.label} contributions...`}
                     onRetry={() => window.location.reload()}
                 />
             </div>
@@ -100,6 +123,14 @@ export function PRStats() {
                     <p className="text-xl text-neutral-400 max-w-2xl mx-auto">
                         Track our collective contributions and celebrate individual achievements
                     </p>
+                    <div className="mt-8 flex flex-col items-center gap-3">
+                        <YearSwitcher />
+                        <p className="text-sm text-neutral-400">
+                            {stats.yearLabel} — {stats.contributorCount}{" "}
+                            {stats.contributorCount === 1 ? "student" : "students"}. {cohort.blurb}
+                        </p>
+                        <FreshnessNote source={stats.source} generatedAt={stats.generatedAt} />
+                    </div>
                 </motion.div>
 
                 {/* Combined Team Stats */}
@@ -138,7 +169,13 @@ export function PRStats() {
                                     <p className="text-xl text-neutral-300 mb-1">Quality PRs</p>
                                     <p className="text-sm text-cyan-300 mb-3">≥100 ⭐ and ≥100 forks</p>
                                     <Link
-                                        href="/quality-prs"
+                                        // Carries the year across, so the count above and the
+                                        // list it links to are about the same students.
+                                        href={
+                                            cohort.id === DEFAULT_COHORT
+                                                ? "/quality-prs"
+                                                : `/quality-prs?year=${cohort.id}`
+                                        }
                                         className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-400 hover:bg-cyan-500 text-black rounded-lg transition-colors text-sm font-semibold"
                                     >
                                         <ExternalLink className="w-4 h-4" />

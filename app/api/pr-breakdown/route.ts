@@ -2,6 +2,8 @@ import { NextResponse } from "next/server";
 import { isGsocOrg } from "@/data/gsoc-orgs";
 import { ossRoster, type Contributor } from "@/lib/oss-roster";
 import { GithubError, allPRsFor, prState, repoNameFromUrl, type PRState } from "@/lib/github-prs";
+import { cohortFromParam } from "@/lib/cohorts";
+import { snapshotFor } from "@/lib/oss-snapshot";
 
 export const runtime = "nodejs";
 
@@ -61,19 +63,65 @@ async function fetchPRsForUser(person: Contributor): Promise<MemberData> {
     return result;
 }
 
-export async function GET() {
-    try {
-        const roster = await ossRoster();
+/**
+ * The same per-member breakdown for a snapshot-backed cohort.
+ *
+ * The snapshot stores every pull request with its resolved repository name, so
+ * the GSoC-organisation test applies here exactly as it does to a live fetch —
+ * this is a different source for the same shape, not a different calculation.
+ */
+function membersFromSnapshot(cohort: Parameters<typeof snapshotFor>[0]): MemberData[] {
+    const snapshot = snapshotFor(cohort);
+    if (!snapshot) return [];
 
+    return snapshot.members.map((person) => {
+        const result: MemberData = {
+            name: person.name,
+            github: person.github,
+            merged: [],
+            open: [],
+            closed: [],
+            gsocPRs: [],
+        };
+
+        for (const stored of person.prs) {
+            const pr: PR = {
+                title: stored.title,
+                url: stored.url,
+                repo: stored.repo,
+                number: stored.number,
+                date: stored.mergedAt ?? stored.createdAt,
+                state: stored.state,
+                isGsoc: isGsocOrg(stored.repo.split("/")[0]),
+            };
+            result[pr.state].push(pr);
+            if (pr.isGsoc) result.gsocPRs.push(pr);
+        }
+
+        return result;
+    });
+}
+
+export async function GET(request: Request) {
+    const cohort = cohortFromParam(new URL(request.url).searchParams.get("year"));
+
+    try {
         const membersData: MemberData[] = [];
         const unavailable: string[] = [];
 
-        for (const person of roster) {
-            try {
-                membersData.push(await fetchPRsForUser(person));
-            } catch (error) {
-                console.error(`[pr-breakdown] ${person.github}:`, error);
-                unavailable.push(person.github);
+        if (cohort.source === "snapshot") {
+            membersData.push(...membersFromSnapshot(cohort.id));
+            unavailable.push(...(snapshotFor(cohort.id)?.unavailable ?? []));
+        } else {
+            const roster = await ossRoster(cohort.id);
+
+            for (const person of roster) {
+                try {
+                    membersData.push(await fetchPRsForUser(person));
+                } catch (error) {
+                    console.error(`[pr-breakdown] ${person.github}:`, error);
+                    unavailable.push(person.github);
+                }
             }
         }
 
@@ -100,6 +148,10 @@ export async function GET() {
         summary.gsocTotal = summary.gsocMerged + summary.gsocOpen + summary.gsocClosed;
 
         return NextResponse.json({
+            year: cohort.id,
+            yearLabel: cohort.label,
+            source: cohort.source,
+            generatedAt: snapshotFor(cohort.id)?.generatedAt ?? null,
             summary,
             members: membersData
                 .map((m) => {

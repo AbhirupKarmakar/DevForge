@@ -3,7 +3,10 @@
 import { motion } from "framer-motion";
 import { Github, ExternalLink, Star, GitFork, Calendar, Filter, SortDesc } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { DataState } from "@/components/ui/empty-state";
+import { FreshnessNote, YearSwitcher } from "@/components/ui/year-switcher";
+import { cohortFromParam } from "@/lib/cohorts";
 
 interface QualityPR {
     title: string;
@@ -25,6 +28,10 @@ interface QualityPRsData {
     prs: QualityPR[];
     totalCount: number;
     lastUpdated: string;
+    year: string;
+    yearLabel: string;
+    source: "live" | "snapshot";
+    generatedAt: string | null;
 }
 
 type SortOption = 'date' | 'stars' | 'forks';
@@ -36,10 +43,13 @@ export function QualityPRsList() {
     const [filterAuthor, setFilterAuthor] = useState<string>('all');
     const [sortBy, setSortBy] = useState<SortOption>('date');
 
+    const searchParams = useSearchParams();
+    const cohort = cohortFromParam(searchParams.get("year"));
+
     useEffect(() => {
         async function fetchPRs() {
             try {
-                const response = await fetch('/api/quality-prs');
+                const response = await fetch(`/api/quality-prs?year=${cohort.id}`);
                 if (!response.ok) throw new Error('Failed to fetch quality PRs');
                 const result = await response.json();
                 setData(result);
@@ -52,15 +62,23 @@ export function QualityPRsList() {
         }
 
         fetchPRs();
-    }, []);
+    }, [cohort.id]);
 
-    if (loading || error || !data) {
+    // Derived, not cleared in the effect: while the next year group loads, the
+    // previous one's pull requests are still in state and must not render under
+    // the new heading.
+    const stale = data !== null && data.year !== cohort.id;
+
+    if (loading || error || !data || stale) {
         return (
             <div className="min-h-screen bg-gradient-to-b from-black via-neutral-950 to-black">
+                <div className="flex justify-center pt-24">
+                    <YearSwitcher />
+                </div>
                 <DataState
                     loading={loading}
                     error={error ? `⚠️ ${error}` : !data ? "⚠️ Failed to load PRs" : null}
-                    loadingLabel="Loading quality PRs..."
+                    loadingLabel={`Loading ${cohort.label} quality PRs...`}
                     onRetry={() => window.location.reload()}
                 />
             </div>
@@ -69,11 +87,14 @@ export function QualityPRsList() {
 
     // Get unique authors for filter
     const authors = Array.from(new Set(data.prs.map(pr => pr.author.github)));
+    // A filter left over from the other year group names somebody who is not in
+    // this list, which would silently render zero results. Fall back to "all".
+    const activeAuthor = authors.includes(filterAuthor) ? filterAuthor : 'all';
 
     // Filter and sort PRs
-    let filteredPRs = filterAuthor === 'all'
+    let filteredPRs = activeAuthor === 'all'
         ? data.prs
-        : data.prs.filter(pr => pr.author.github === filterAuthor);
+        : data.prs.filter(pr => pr.author.github === activeAuthor);
 
     filteredPRs = [...filteredPRs].sort((a, b) => {
         if (sortBy === 'date') return new Date(b.mergedAt).getTime() - new Date(a.mergedAt).getTime();
@@ -100,6 +121,11 @@ export function QualityPRsList() {
                     <p className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
                         {data.totalCount} Quality PRs
                     </p>
+                    <div className="mt-8 flex flex-col items-center gap-3">
+                        <YearSwitcher />
+                        <p className="text-sm text-neutral-400">{data.yearLabel} — {cohort.blurb}</p>
+                        <FreshnessNote source={data.source} generatedAt={data.generatedAt} />
+                    </div>
                 </motion.div>
 
                 {/* Filters */}
@@ -113,7 +139,7 @@ export function QualityPRsList() {
                     <div className="flex items-center gap-2 glass rounded-lg px-4 py-2">
                         <Filter className="w-4 h-4 text-cyan-400" />
                         <select
-                            value={filterAuthor}
+                            value={activeAuthor}
                             onChange={(e) => setFilterAuthor(e.target.value)}
                             className="bg-transparent text-white border-none outline-none cursor-pointer"
                         >

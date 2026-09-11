@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { ossRoster, type Contributor } from "@/lib/oss-roster";
 import { GithubError, allPRsFor, isQualityRepo, prState, repoFacts } from "@/lib/github-prs";
+import { cohortFromParam } from "@/lib/cohorts";
+import { snapshotFor } from "@/lib/oss-snapshot";
 
 export const runtime = "nodejs";
 
@@ -89,13 +91,55 @@ async function statsFor(person: Contributor): Promise<PRStats> {
     }
 }
 
-export async function GET() {
-    try {
-        const roster = await ossRoster();
+/**
+ * The same numbers for a snapshot-backed cohort, read from disk.
+ *
+ * Milestones are recomputed here rather than stored in the snapshot so the
+ * ladder in this file stays the only definition of it. Editing a threshold
+ * should change every year group at once, not just the one that happens to be
+ * counted live.
+ */
+function statsFromSnapshot(cohort: Parameters<typeof snapshotFor>[0]): {
+    members: PRStats[];
+    generatedAt: string | null;
+} {
+    const snapshot = snapshotFor(cohort);
+    if (!snapshot) return { members: [], generatedAt: null };
 
-        const members: PRStats[] = [];
-        for (const person of roster) {
-            members.push(await statsFor(person));
+    const members = snapshot.members.map((person) => {
+        const { achieved, nextMilestone } = calculateMilestones(person.prCount, INDIVIDUAL_MILESTONES);
+        return {
+            name: person.name,
+            github: person.github,
+            role: "Member",
+            avatar: `https://github.com/${person.github}.png`,
+            year: cohort,
+            prCount: person.prCount,
+            totalPRs: person.totalPRs,
+            milestones: achieved,
+            nextMilestone,
+            live: person.live,
+        } satisfies PRStats;
+    });
+
+    return { members, generatedAt: snapshot.generatedAt };
+}
+
+export async function GET(request: Request) {
+    const cohort = cohortFromParam(new URL(request.url).searchParams.get("year"));
+
+    try {
+        let members: PRStats[];
+        let generatedAt: string | null = null;
+
+        if (cohort.source === "snapshot") {
+            ({ members, generatedAt } = statsFromSnapshot(cohort.id));
+        } else {
+            const roster = await ossRoster(cohort.id);
+            members = [];
+            for (const person of roster) {
+                members.push(await statsFor(person));
+            }
         }
 
         const totalPRs = members.reduce((sum, m) => sum + m.prCount, 0);
@@ -104,6 +148,13 @@ export async function GET() {
         const stale = members.filter((m) => !m.live).map((m) => m.github);
 
         return NextResponse.json({
+            year: cohort.id,
+            yearLabel: cohort.label,
+            // Tells the page whether it is showing live numbers or a snapshot,
+            // so it can say which instead of implying both are equally fresh.
+            source: cohort.source,
+            generatedAt,
+            contributorCount: members.length,
             totalPRs,
             totalAllPRs,
             members: members.sort((a, b) => b.prCount - a.prCount || b.totalPRs - a.totalPRs),

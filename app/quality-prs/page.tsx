@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { QualityPRsList } from "@/components/quality-prs-list";
 
 export const metadata = {
@@ -8,7 +9,10 @@ export const metadata = {
 export default function QualityPRsPage() {
     return (
         <div className="bg-transparent text-white selection:bg-cyan-400 selection:text-black">
-            <QualityPRsList />
+            {/* The year lives in the query string; reading it needs a boundary. */}
+            <Suspense fallback={null}>
+                <QualityPRsList />
+            </Suspense>
         </div>
     );
 }

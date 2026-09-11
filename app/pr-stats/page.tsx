@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { PRStats } from "@/components/pr-stats";
 
 export const metadata = {
@@ -8,7 +9,11 @@ export const metadata = {
 export default function PRStatsPage() {
     return (
         <div className="bg-transparent text-white selection:bg-cyan-400 selection:text-black">
-            <PRStats />
+            {/* The year lives in the query string, and reading it needs a boundary
+                so the rest of the page can still be prerendered. */}
+            <Suspense fallback={null}>
+                <PRStats />
+            </Suspense>
         </div>
     );
 }

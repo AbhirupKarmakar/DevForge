@@ -1,0 +1,5394 @@
+{
+  "cohort": "first-year",
+  "generatedAt": "2026-09-11T03:50:44.388Z",
+  "unavailable": [
+    "Yashpanchal8"
+  ],
+  "members": [
+    {
+      "name": "Jarvis Jeason Jacob",
+      "github": "Jarvis-J-Jacob",
+      "linkedin": "https://www.linkedin.com/in/jarvis-jeason-jacob-213124419/",
+      "prCount": 2,
+      "totalPRs": 14,
+      "openPRs": 3,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "blokkaDev",
+          "count": 7
+        },
+        {
+          "name": "pradipNP",
+          "count": 3
+        },
+        {
+          "name": "firstcontributions",
+          "count": 1
+        },
+        {
+          "name": "michaelegner",
+          "count": 1
+        },
+        {
+          "name": "ssagar1999",
+          "count": 1
+        },
+        {
+          "name": "TheAlgorithms",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Add docstring to prompt()",
+          "url": "https://github.com/TheAlgorithms/Python/pull/15092",
+          "number": 15092,
+          "state": "merged",
+          "mergedAt": "2026-09-08T16:16:19Z",
+          "createdAt": "2026-08-27T03:11:58Z",
+          "repo": "TheAlgorithms/Python",
+          "stars": 224463,
+          "forks": 51046,
+          "quality": true
+        },
+        {
+          "title": "Fix 500 in public#binary_packages for scmsync project packages",
+          "url": "https://github.com/openSUSE/open-build-service/pull/20251",
+          "number": 20251,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-09-02T12:20:41Z",
+          "repo": "openSUSE/open-build-service",
+          "stars": 1073,
+          "forks": 488,
+          "quality": true
+        },
+        {
+          "title": "docs: add worked curl example for A5 blast radius",
+          "url": "https://github.com/michaelegner/architecture-intelligence-platform/pull/43",
+          "number": 43,
+          "state": "merged",
+          "mergedAt": "2026-09-01T10:24:24Z",
+          "createdAt": "2026-09-01T03:39:40Z",
+          "repo": "michaelegner/architecture-intelligence-platform",
+          "stars": 0,
+          "forks": 9,
+          "quality": false
+        },
+        {
+          "title": "Add PNG app icons for PWA manifest (#5)",
+          "url": "https://github.com/pradipNP/khelzon/pull/44",
+          "number": 44,
+          "state": "merged",
+          "mergedAt": "2026-09-01T05:20:15Z",
+          "createdAt": "2026-08-31T09:55:37Z",
+          "repo": "pradipNP/khelzon",
+          "stars": 1,
+          "forks": 10,
+          "quality": false
+        },
+        {
+          "title": "Add synthetic Canada role-decision evaluation fixture",
+          "url": "https://github.com/HopLittleBunny/career-centre/pull/12",
+          "number": 12,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-31T16:16:15Z",
+          "repo": "HopLittleBunny/career-centre",
+          "stars": 0,
+          "forks": 1,
+          "quality": false
+        },
+        {
+          "title": "Add Request a Game form in footer (#16)",
+          "url": "https://github.com/pradipNP/khelzon/pull/45",
+          "number": 45,
+          "state": "merged",
+          "mergedAt": "2026-08-31T10:41:44Z",
+          "createdAt": "2026-08-31T10:13:24Z",
+          "repo": "pradipNP/khelzon",
+          "stars": 1,
+          "forks": 10,
+          "quality": false
+        },
+        {
+          "title": "Add configuration validation (#10)",
+          "url": "https://github.com/blokkaDev/cluster/pull/20",
+          "number": 20,
+          "state": "merged",
+          "mergedAt": "2026-08-30T12:32:20Z",
+          "createdAt": "2026-08-30T06:28:53Z",
+          "repo": "blokkaDev/cluster",
+          "stars": 5,
+          "forks": 5,
+          "quality": false
+        },
+        {
+          "title": "Add CLI tests (#8)",
+          "url": "https://github.com/blokkaDev/cluster/pull/18",
+          "number": 18,
+          "state": "merged",
+          "mergedAt": "2026-08-29T19:43:53Z",
+          "createdAt": "2026-08-29T17:45:06Z",
+          "repo": "blokkaDev/cluster",
+          "stars": 5,
+          "forks": 5,
+          "quality": false
+        },
+        {
+          "title": "Improve error messages when the Manager is unreachable (#9)",
+          "url": "https://github.com/blokkaDev/cluster/pull/19",
+          "number": 19,
+          "state": "merged",
+          "mergedAt": "2026-08-29T19:43:00Z",
+          "createdAt": "2026-08-29T17:53:19Z",
+          "repo": "blokkaDev/cluster",
+          "stars": 5,
+          "forks": 5,
+          "quality": false
+        },
+        {
+          "title": "Add version command",
+          "url": "https://github.com/blokkaDev/cluster/pull/17",
+          "number": 17,
+          "state": "merged",
+          "mergedAt": "2026-08-29T09:05:42Z",
+          "createdAt": "2026-08-29T08:06:32Z",
+          "repo": "blokkaDev/cluster",
+          "stars": 5,
+          "forks": 5,
+          "quality": false
+        },
+        {
+          "title": "Address CodeRabbit review: single error report + start success message",
+          "url": "https://github.com/blokkaDev/cluster/pull/16",
+          "number": 16,
+          "state": "merged",
+          "mergedAt": "2026-08-29T09:04:03Z",
+          "createdAt": "2026-08-29T07:39:07Z",
+          "repo": "blokkaDev/cluster",
+          "stars": 5,
+          "forks": 5,
+          "quality": false
+        },
+        {
+          "title": "Add colored CLI output",
+          "url": "https://github.com/blokkaDev/cluster/pull/15",
+          "number": 15,
+          "state": "merged",
+          "mergedAt": "2026-08-29T06:59:24Z",
+          "createdAt": "2026-08-29T06:46:06Z",
+          "repo": "blokkaDev/cluster",
+          "stars": 5,
+          "forks": 5,
+          "quality": false
+        },
+        {
+          "title": "Fix duplicate POST /connect/{worker_id} request in manager.py",
+          "url": "https://github.com/blokkaDev/cluster/pull/14",
+          "number": 14,
+          "state": "merged",
+          "mergedAt": "2026-08-29T06:52:31Z",
+          "createdAt": "2026-08-29T06:18:43Z",
+          "repo": "blokkaDev/cluster",
+          "stars": 5,
+          "forks": 5,
+          "quality": false
+        },
+        {
+          "title": "Add labels to header toolbar buttons",
+          "url": "https://github.com/pradipNP/khelzon/pull/13",
+          "number": 13,
+          "state": "merged",
+          "mergedAt": "2026-08-28T17:09:24Z",
+          "createdAt": "2026-08-28T15:16:37Z",
+          "repo": "pradipNP/khelzon",
+          "stars": 1,
+          "forks": 10,
+          "quality": false
+        },
+        {
+          "title": "Add docstring to build_tree()",
+          "url": "https://github.com/TheAlgorithms/Python/pull/15091",
+          "number": 15091,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-26T18:45:57Z",
+          "repo": "TheAlgorithms/Python",
+          "stars": 224463,
+          "forks": 51046,
+          "quality": true
+        },
+        {
+          "title": "Add Jarvis-J-Jacob to Contributors list",
+          "url": "https://github.com/firstcontributions/first-contributions/pull/123910",
+          "number": 123910,
+          "state": "merged",
+          "mergedAt": "2026-08-26T18:27:15Z",
+          "createdAt": "2026-08-26T16:47:03Z",
+          "repo": "firstcontributions/first-contributions",
+          "stars": 55889,
+          "forks": 109174,
+          "quality": true
+        },
+        {
+          "title": "First Open Source Contribution",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/7",
+          "number": 7,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:52:00Z",
+          "createdAt": "2026-08-20T13:52:44Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Ishan Kumar",
+      "github": "ishan-one8",
+      "prCount": 1,
+      "totalPRs": 9,
+      "openPRs": 4,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "vyncint",
+          "count": 6
+        },
+        {
+          "name": "firstcontributions",
+          "count": 1
+        },
+        {
+          "name": "NexusOS-12",
+          "count": 1
+        },
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "fix(react): close thread view when its parent message is deleted",
+          "url": "https://github.com/RocketChat/EmbeddedChat/pull/1368",
+          "number": 1368,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-30T19:30:26Z",
+          "repo": "RocketChat/EmbeddedChat",
+          "stars": 162,
+          "forks": 380,
+          "quality": true
+        },
+        {
+          "title": "fix(docs): add alt text to homepage logo image",
+          "url": "https://github.com/RocketChat/EmbeddedChat/pull/1367",
+          "number": 1367,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-30T09:41:55Z",
+          "repo": "RocketChat/EmbeddedChat",
+          "stars": 162,
+          "forks": 380,
+          "quality": true
+        },
+        {
+          "title": "fix(react): correct 'conatiner' typo to 'container' in ReportMessage",
+          "url": "https://github.com/RocketChat/EmbeddedChat/pull/1366",
+          "number": 1366,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-30T09:35:28Z",
+          "repo": "RocketChat/EmbeddedChat",
+          "stars": 162,
+          "forks": 380,
+          "quality": true
+        },
+        {
+          "title": "fix(react): remove stray parenthesis rendered in ImageGallery",
+          "url": "https://github.com/RocketChat/EmbeddedChat/pull/1365",
+          "number": 1365,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-30T09:15:52Z",
+          "repo": "RocketChat/EmbeddedChat",
+          "stars": 162,
+          "forks": 380,
+          "quality": true
+        },
+        {
+          "title": "docs(driver): record the named-const mask re-test — it stays unevaluable",
+          "url": "https://github.com/vyncint/reconverge/pull/81",
+          "number": 81,
+          "state": "merged",
+          "mergedAt": "2026-08-29T12:37:16Z",
+          "createdAt": "2026-08-28T15:12:14Z",
+          "repo": "vyncint/reconverge",
+          "stars": 6,
+          "forks": 4,
+          "quality": false
+        },
+        {
+          "title": "fix(learn): wrap the verdict instead of truncating it at every width",
+          "url": "https://github.com/vyncint/reconverge/pull/79",
+          "number": 79,
+          "state": "merged",
+          "mergedAt": "2026-08-28T23:46:22Z",
+          "createdAt": "2026-08-28T14:07:10Z",
+          "repo": "vyncint/reconverge",
+          "stars": 6,
+          "forks": 4,
+          "quality": false
+        },
+        {
+          "title": "fix(cli): resolve source spans against the workspace root",
+          "url": "https://github.com/vyncint/reconverge/pull/78",
+          "number": 78,
+          "state": "merged",
+          "mergedAt": "2026-08-28T14:31:49Z",
+          "createdAt": "2026-08-28T13:43:08Z",
+          "repo": "vyncint/reconverge",
+          "stars": 6,
+          "forks": 4,
+          "quality": false
+        },
+        {
+          "title": "fix(cc): report out-of-range --cc against the table, normalize value",
+          "url": "https://github.com/vyncint/reconverge/pull/77",
+          "number": 77,
+          "state": "merged",
+          "mergedAt": "2026-08-28T13:22:51Z",
+          "createdAt": "2026-08-28T13:16:04Z",
+          "repo": "vyncint/reconverge",
+          "stars": 6,
+          "forks": 4,
+          "quality": false
+        },
+        {
+          "title": "docs(cli): clarify JSON filter behavior",
+          "url": "https://github.com/vyncint/reconverge/pull/76",
+          "number": 76,
+          "state": "merged",
+          "mergedAt": "2026-08-28T12:58:58Z",
+          "createdAt": "2026-08-28T12:52:34Z",
+          "repo": "vyncint/reconverge",
+          "stars": 6,
+          "forks": 4,
+          "quality": false
+        },
+        {
+          "title": "docs: update release status",
+          "url": "https://github.com/vyncint/reconverge/pull/75",
+          "number": 75,
+          "state": "merged",
+          "mergedAt": "2026-08-26T22:03:18Z",
+          "createdAt": "2026-08-26T18:37:08Z",
+          "repo": "vyncint/reconverge",
+          "stars": 6,
+          "forks": 4,
+          "quality": false
+        },
+        {
+          "title": "feat: improve JSON formatter empty state",
+          "url": "https://github.com/NexusOS-12/devkit/pull/10",
+          "number": 10,
+          "state": "merged",
+          "mergedAt": "2026-08-26T20:53:09Z",
+          "createdAt": "2026-08-26T20:42:35Z",
+          "repo": "NexusOS-12/devkit",
+          "stars": 0,
+          "forks": 1,
+          "quality": false
+        },
+        {
+          "title": "docs: Fix Python version inconsistency in CONTEXT.md",
+          "url": "https://github.com/firstcontributions/first-contributions/pull/123905",
+          "number": 123905,
+          "state": "merged",
+          "mergedAt": "2026-08-26T16:13:50Z",
+          "createdAt": "2026-08-26T15:53:00Z",
+          "repo": "firstcontributions/first-contributions",
+          "stars": 55889,
+          "forks": 109174,
+          "quality": true
+        },
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/28",
+          "number": 28,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:50:53Z",
+          "createdAt": "2026-08-20T14:00:16Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Ayaan Kapoor",
+      "github": "Ayaan-20-11",
+      "linkedin": "https://www.linkedin.com/in/ayaan-kapoor-/",
+      "prCount": 1,
+      "totalPRs": 7,
+      "openPRs": 3,
+      "closedPRs": 1,
+      "orgs": [
+        {
+          "name": "michaelegner",
+          "count": 2
+        },
+        {
+          "name": "aeshef",
+          "count": 1
+        },
+        {
+          "name": "firstcontributions",
+          "count": 1
+        },
+        {
+          "name": "mloda-ai",
+          "count": 1
+        },
+        {
+          "name": "ssagar1999",
+          "count": 1
+        },
+        {
+          "name": "yakew7",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "feat(search): add search history and quick chips",
+          "url": "https://github.com/RamK2006/cineiq/pull/381",
+          "number": 381,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-09-09T20:19:06Z",
+          "repo": "RamK2006/cineiq",
+          "stars": 5,
+          "forks": 24,
+          "quality": false
+        },
+        {
+          "title": "test: expand period compare harness cases",
+          "url": "https://github.com/aeshef/obsidian-agent/pull/27",
+          "number": 27,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-09-02T07:54:20Z",
+          "repo": "aeshef/obsidian-agent",
+          "stars": 8,
+          "forks": 7,
+          "quality": false
+        },
+        {
+          "title": "docs: clarify root pyproject generation",
+          "url": "https://github.com/mloda-ai/mloda-registry/pull/527",
+          "number": 527,
+          "state": "merged",
+          "mergedAt": "2026-09-01T20:41:39Z",
+          "createdAt": "2026-08-30T10:56:53Z",
+          "repo": "mloda-ai/mloda-registry",
+          "stars": 5,
+          "forks": 19,
+          "quality": false
+        },
+        {
+          "title": "fix: use bundled font for terminal renderer",
+          "url": "https://github.com/yakew7/Fair-Code/pull/331",
+          "number": 331,
+          "state": "merged",
+          "mergedAt": "2026-08-28T10:09:25Z",
+          "createdAt": "2026-08-28T08:53:01Z",
+          "repo": "yakew7/Fair-Code",
+          "stars": 46,
+          "forks": 36,
+          "quality": false
+        },
+        {
+          "title": "docs: add CI and license badges",
+          "url": "https://github.com/michaelegner/architecture-intelligence-platform/pull/7",
+          "number": 7,
+          "state": "merged",
+          "mergedAt": "2026-08-28T06:37:34Z",
+          "createdAt": "2026-08-27T18:18:38Z",
+          "repo": "michaelegner/architecture-intelligence-platform",
+          "stars": 0,
+          "forks": 9,
+          "quality": false
+        },
+        {
+          "title": "docs: add adapter development example",
+          "url": "https://github.com/michaelegner/architecture-intelligence-platform/pull/6",
+          "number": 6,
+          "state": "merged",
+          "mergedAt": "2026-08-28T06:26:37Z",
+          "createdAt": "2026-08-27T13:28:35Z",
+          "repo": "michaelegner/architecture-intelligence-platform",
+          "stars": 0,
+          "forks": 9,
+          "quality": false
+        },
+        {
+          "title": "fix: preserve braces in dashboard rows",
+          "url": "https://github.com/Svyable/unsolved-math/pull/14",
+          "number": 14,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-08-27T12:22:11Z",
+          "repo": "Svyable/unsolved-math",
+          "stars": 1,
+          "forks": 1,
+          "quality": false
+        },
+        {
+          "title": "feat: add OpenCode adapter",
+          "url": "https://github.com/Socialpranker/agentburn/pull/4",
+          "number": 4,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-27T08:23:57Z",
+          "repo": "Socialpranker/agentburn",
+          "stars": 120,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "docs: document Apple Calendar connector setup",
+          "url": "https://github.com/aeshef/obsidian-agent/pull/13",
+          "number": 13,
+          "state": "merged",
+          "mergedAt": "2026-08-26T14:06:39Z",
+          "createdAt": "2026-08-26T13:32:14Z",
+          "repo": "aeshef/obsidian-agent",
+          "stars": 8,
+          "forks": 7,
+          "quality": false
+        },
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/29",
+          "number": 29,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:50:50Z",
+          "createdAt": "2026-08-20T14:00:18Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        },
+        {
+          "title": "Add Ayaan Kapoor to Contributors list",
+          "url": "https://github.com/firstcontributions/first-contributions/pull/118695",
+          "number": 118695,
+          "state": "merged",
+          "mergedAt": "2026-06-08T18:21:35Z",
+          "createdAt": "2026-06-08T18:21:21Z",
+          "repo": "firstcontributions/first-contributions",
+          "stars": 55889,
+          "forks": 109174,
+          "quality": true
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Mehul Pundir Negi",
+      "github": "MehulNegi",
+      "linkedin": "https://www.linkedin.com/in/mehul-negi/",
+      "prCount": 1,
+      "totalPRs": 4,
+      "openPRs": 2,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "anoopcodehack",
+          "count": 1
+        },
+        {
+          "name": "Hebbian-Robotics",
+          "count": 1
+        },
+        {
+          "name": "sonamii",
+          "count": 1
+        },
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "fix: validate camera FPS thresholds",
+          "url": "https://github.com/Hebbian-Robotics/hflow/pull/492",
+          "number": 492,
+          "state": "merged",
+          "mergedAt": "2026-09-10T19:54:36Z",
+          "createdAt": "2026-09-10T07:55:03Z",
+          "repo": "Hebbian-Robotics/hflow",
+          "stars": 261,
+          "forks": 144,
+          "quality": true
+        },
+        {
+          "title": "chore: fix EditorConfig lint errors (issue #14919)",
+          "url": "https://github.com/stdlib-js/stdlib/pull/14926",
+          "number": 14926,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-09-03T06:22:13Z",
+          "repo": "stdlib-js/stdlib",
+          "stars": 5957,
+          "forks": 1266,
+          "quality": true
+        },
+        {
+          "title": "feat: display pomodoro sessions based on estimate",
+          "url": "https://github.com/anoopcodehack/DevBoard/pull/495",
+          "number": 495,
+          "state": "merged",
+          "mergedAt": "2026-09-01T17:48:33Z",
+          "createdAt": "2026-09-01T16:45:45Z",
+          "repo": "anoopcodehack/DevBoard",
+          "stars": 35,
+          "forks": 96,
+          "quality": false
+        },
+        {
+          "title": "Updated the README file",
+          "url": "https://github.com/sonamii/next-bench/pull/34",
+          "number": 34,
+          "state": "merged",
+          "mergedAt": "2026-08-27T13:13:45Z",
+          "createdAt": "2026-08-26T18:04:54Z",
+          "repo": "sonamii/next-bench",
+          "stars": 4,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "Added my profile",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/4",
+          "number": 4,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:52:11Z",
+          "createdAt": "2026-08-20T13:44:24Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        },
+        {
+          "title": "updated the welcome.json",
+          "url": "https://github.com/NST-DEVFORGE/Welcome_to_opensource/pull/1",
+          "number": 1,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-03T14:47:04Z",
+          "repo": "NST-DEVFORGE/Welcome_to_opensource",
+          "stars": 0,
+          "forks": 5,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Aryan verma",
+      "github": "aryangetsreal",
+      "linkedin": "https://www.linkedin.com/in/aryan-verma-257747418?trk=contact-info",
+      "prCount": 1,
+      "totalPRs": 2,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "pypa",
+          "count": 1
+        },
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "docs: clarify entry point support :)",
+          "url": "https://github.com/pypa/packaging.python.org/pull/2123",
+          "number": 2123,
+          "state": "merged",
+          "mergedAt": "2026-09-01T09:14:48Z",
+          "createdAt": "2026-08-31T19:10:17Z",
+          "repo": "pypa/packaging.python.org",
+          "stars": 1665,
+          "forks": 1709,
+          "quality": true
+        },
+        {
+          "title": "Hi lol",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/106",
+          "number": 106,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:46:58Z",
+          "createdAt": "2026-08-20T18:57:09Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Tejas Dharmendra Patel",
+      "github": "tdpatelgit",
+      "linkedin": "https://www.linkedin.com/in/tejas-dharmendra-patel-b37024362/",
+      "prCount": 0,
+      "totalPRs": 52,
+      "openPRs": 0,
+      "closedPRs": 2,
+      "orgs": [
+        {
+          "name": "tdpatelgit",
+          "count": 51
+        },
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added my profile",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/65",
+          "number": 65,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:49:06Z",
+          "createdAt": "2026-08-20T14:25:02Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        },
+        {
+          "title": "fix: now all data is displayed on the document",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/49",
+          "number": 49,
+          "state": "merged",
+          "mergedAt": "2026-08-01T07:09:59Z",
+          "createdAt": "2026-08-01T07:09:50Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "₹fix: added all the extra columns that were missing.",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/48",
+          "number": 48,
+          "state": "merged",
+          "mergedAt": "2026-07-30T11:40:10Z",
+          "createdAt": "2026-07-30T11:38:57Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: added Export PL",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/47",
+          "number": 47,
+          "state": "merged",
+          "mergedAt": "2026-07-28T07:49:25Z",
+          "createdAt": "2026-07-28T07:48:01Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "fix: now FOB and CNF values are auto calculated",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/46",
+          "number": 46,
+          "state": "merged",
+          "mergedAt": "2026-07-27T13:52:55Z",
+          "createdAt": "2026-07-27T13:52:48Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "Feature/export invoice",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/45",
+          "number": 45,
+          "state": "merged",
+          "mergedAt": "2026-07-27T12:00:29Z",
+          "createdAt": "2026-07-27T11:58:04Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "redesign: added seperate HSNC column to all documents",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/44",
+          "number": 44,
+          "state": "merged",
+          "mergedAt": "2026-07-27T07:28:36Z",
+          "createdAt": "2026-07-27T07:28:22Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "redesign: changed document looks",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/43",
+          "number": 43,
+          "state": "merged",
+          "mergedAt": "2026-07-25T08:16:05Z",
+          "createdAt": "2026-07-25T08:15:16Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "Feature/adding regular tests",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/42",
+          "number": 42,
+          "state": "merged",
+          "mergedAt": "2026-07-24T18:21:43Z",
+          "createdAt": "2026-07-24T18:18:04Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: added Export Invoice",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/41",
+          "number": 41,
+          "state": "merged",
+          "mergedAt": "2026-07-24T17:18:18Z",
+          "createdAt": "2026-07-24T17:18:10Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "Revert \"feat: added Permissions tab\"",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/40",
+          "number": 40,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-07-24T12:12:20Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: added Permissions tab",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/39",
+          "number": 39,
+          "state": "merged",
+          "mergedAt": "2026-07-24T11:52:22Z",
+          "createdAt": "2026-07-24T11:52:01Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: added Inventory tab and management",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/38",
+          "number": 38,
+          "state": "merged",
+          "mergedAt": "2026-07-24T09:32:52Z",
+          "createdAt": "2026-07-24T09:32:33Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "redesign: now all the documents add empty cell to fill the A4 sheet fully",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/37",
+          "number": 37,
+          "state": "merged",
+          "mergedAt": "2026-07-24T09:01:05Z",
+          "createdAt": "2026-07-24T09:00:58Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: added CIN/LLP NO.",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/36",
+          "number": 36,
+          "state": "merged",
+          "mergedAt": "2026-07-23T15:46:54Z",
+          "createdAt": "2026-07-23T15:45:35Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "Feature/reworking documents",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/35",
+          "number": 35,
+          "state": "merged",
+          "mergedAt": "2026-07-23T14:16:09Z",
+          "createdAt": "2026-07-23T14:15:56Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "fix: fixed many PI and related bugs",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/34",
+          "number": 34,
+          "state": "merged",
+          "mergedAt": "2026-07-23T13:17:20Z",
+          "createdAt": "2026-07-23T13:17:02Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "fix: small bugs llike importing taxes from PO and added PL",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/33",
+          "number": 33,
+          "state": "merged",
+          "mergedAt": "2026-07-23T12:43:25Z",
+          "createdAt": "2026-07-23T12:43:17Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: first push of the Purchase Invoice Feature",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/32",
+          "number": 32,
+          "state": "merged",
+          "mergedAt": "2026-07-23T10:29:46Z",
+          "createdAt": "2026-07-23T10:29:34Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "fix: there were problems with counts and other connectivity problems now resolved",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/31",
+          "number": 31,
+          "state": "merged",
+          "mergedAt": "2026-07-23T09:28:00Z",
+          "createdAt": "2026-07-23T09:27:51Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "fix: reworked the way PI to PO generation works",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/30",
+          "number": 30,
+          "state": "merged",
+          "mergedAt": "2026-07-23T08:40:55Z",
+          "createdAt": "2026-07-23T08:33:18Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat(PO): added the dropdown 'purchase under' for PO",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/29",
+          "number": 29,
+          "state": "merged",
+          "mergedAt": "2026-07-23T05:55:30Z",
+          "createdAt": "2026-07-23T05:55:21Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "fix: now PL information can be imported from previously linked document",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/28",
+          "number": 28,
+          "state": "merged",
+          "mergedAt": "2026-07-22T17:40:43Z",
+          "createdAt": "2026-07-22T17:40:36Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "look: redesigned the quotation page to now add the signature on the bank name and address row",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/27",
+          "number": 27,
+          "state": "merged",
+          "mergedAt": "2026-07-22T17:04:39Z",
+          "createdAt": "2026-07-22T17:04:30Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "fix: all pallet calculations are now done in decimals instead of full integers",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/26",
+          "number": 26,
+          "state": "merged",
+          "mergedAt": "2026-07-22T16:42:56Z",
+          "createdAt": "2026-07-22T16:42:48Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "fix: fixed the bug on all buttons",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/25",
+          "number": 25,
+          "state": "merged",
+          "mergedAt": "2026-07-22T16:26:32Z",
+          "createdAt": "2026-07-22T16:26:24Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "fix: now multiple PO documents can be generated",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/24",
+          "number": 24,
+          "state": "merged",
+          "mergedAt": "2026-07-22T15:38:30Z",
+          "createdAt": "2026-07-22T15:37:29Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "Fix/removing old rcmc code",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/23",
+          "number": 23,
+          "state": "merged",
+          "mergedAt": "2026-07-22T10:12:08Z",
+          "createdAt": "2026-07-22T10:11:59Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "Feature/adding regular tests",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/22",
+          "number": 22,
+          "state": "merged",
+          "mergedAt": "2026-07-21T13:56:11Z",
+          "createdAt": "2026-07-21T13:55:59Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "fix: moved the remarks to after the bank address",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/21",
+          "number": 21,
+          "state": "merged",
+          "mergedAt": "2026-07-21T08:22:38Z",
+          "createdAt": "2026-07-21T08:22:29Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feature: can add supplier from PO",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/20",
+          "number": 20,
+          "state": "merged",
+          "mergedAt": "2026-07-21T08:09:03Z",
+          "createdAt": "2026-07-21T08:08:55Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "fix: import missing RCMC model in repositories.py",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/19",
+          "number": 19,
+          "state": "merged",
+          "mergedAt": "2026-07-21T06:22:23Z",
+          "createdAt": "2026-07-21T06:22:14Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: added RCMC details to Our company",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/18",
+          "number": 18,
+          "state": "merged",
+          "mergedAt": "2026-07-20T19:58:41Z",
+          "createdAt": "2026-07-20T19:58:34Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: seperated different client types",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/17",
+          "number": 17,
+          "state": "merged",
+          "mergedAt": "2026-07-20T09:18:45Z",
+          "createdAt": "2026-07-20T09:18:03Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "Fix/bugs",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/16",
+          "number": 16,
+          "state": "merged",
+          "mergedAt": "2026-07-18T19:30:43Z",
+          "createdAt": "2026-07-18T19:25:25Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "Feature/purchase order",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/15",
+          "number": 15,
+          "state": "merged",
+          "mergedAt": "2026-07-18T17:48:29Z",
+          "createdAt": "2026-07-18T17:48:22Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feature: added pallet packing",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/14",
+          "number": 14,
+          "state": "merged",
+          "mergedAt": "2026-07-18T13:28:42Z",
+          "createdAt": "2026-07-18T13:28:34Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: added multiple pallet packing options",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/13",
+          "number": 13,
+          "state": "merged",
+          "mergedAt": "2026-07-18T10:13:21Z",
+          "createdAt": "2026-07-18T10:13:12Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: quotation now auto fills to fully occupy the first page",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/12",
+          "number": 12,
+          "state": "merged",
+          "mergedAt": "2026-07-18T09:34:29Z",
+          "createdAt": "2026-07-18T09:34:21Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: creating a document now updates client/lead status",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/11",
+          "number": 11,
+          "state": "merged",
+          "mergedAt": "2026-07-18T08:46:32Z",
+          "createdAt": "2026-07-18T08:46:20Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat(packing-list): can see no. of boxes per product",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/10",
+          "number": 10,
+          "state": "merged",
+          "mergedAt": "2026-07-18T07:38:27Z",
+          "createdAt": "2026-07-18T07:38:19Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: removed weight class and vessel no.",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/9",
+          "number": 9,
+          "state": "merged",
+          "mergedAt": "2026-07-18T07:24:49Z",
+          "createdAt": "2026-07-18T07:24:42Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "fix(quotation): adjusted column and row widths",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/8",
+          "number": 8,
+          "state": "merged",
+          "mergedAt": "2026-07-17T19:18:30Z",
+          "createdAt": "2026-07-17T19:18:17Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat(packing list): added the ability to add multiple designs under t…",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/7",
+          "number": 7,
+          "state": "merged",
+          "mergedAt": "2026-07-17T18:44:04Z",
+          "createdAt": "2026-07-17T18:43:46Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "fix:Packing list input order rearranged",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/6",
+          "number": 6,
+          "state": "merged",
+          "mergedAt": "2026-07-17T17:53:07Z",
+          "createdAt": "2026-07-17T17:52:57Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: added packing list to quotation",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/5",
+          "number": 5,
+          "state": "merged",
+          "mergedAt": "2026-07-17T16:10:59Z",
+          "createdAt": "2026-07-17T16:10:29Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: added version history to document",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/4",
+          "number": 4,
+          "state": "merged",
+          "mergedAt": "2026-07-17T08:11:59Z",
+          "createdAt": "2026-07-17T08:11:48Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: added the annexure ability to the document generation. added th…",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/3",
+          "number": 3,
+          "state": "merged",
+          "mergedAt": "2026-07-17T07:27:58Z",
+          "createdAt": "2026-07-17T07:27:23Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: restructured product managment to category/product/sub category…",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/2",
+          "number": 2,
+          "state": "merged",
+          "mergedAt": "2026-07-16T11:48:12Z",
+          "createdAt": "2026-07-16T11:47:53Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "Fix/prdocut bug",
+          "url": "https://github.com/tdpatelgit/exportManagement/pull/1",
+          "number": 1,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-07-16T06:19:15Z",
+          "repo": "tdpatelgit/exportManagement",
+          "stars": 1,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "feat: Added alert category, footer and applied UI theme",
+          "url": "https://github.com/tdpatelgit/pg_professional/pull/4",
+          "number": 4,
+          "state": "merged",
+          "mergedAt": "2022-04-23T01:54:27Z",
+          "createdAt": "2022-04-23T01:53:02Z",
+          "repo": "tdpatelgit/pg_professional",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "fix: Logging errors",
+          "url": "https://github.com/tdpatelgit/pg_professional/pull/3",
+          "number": 3,
+          "state": "merged",
+          "mergedAt": "2022-04-21T17:14:08Z",
+          "createdAt": "2022-04-21T17:04:42Z",
+          "repo": "tdpatelgit/pg_professional",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "Added all static checks",
+          "url": "https://github.com/tdpatelgit/pg_professional/pull/2",
+          "number": 2,
+          "state": "merged",
+          "mergedAt": "2022-04-20T23:32:06Z",
+          "createdAt": "2022-04-20T23:17:18Z",
+          "repo": "tdpatelgit/pg_professional",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "Added pylint, pycodestyle and pydocstyle dev deps in Pipfile",
+          "url": "https://github.com/tdpatelgit/pg_professional/pull/1",
+          "number": 1,
+          "state": "merged",
+          "mergedAt": "2022-04-20T23:09:52Z",
+          "createdAt": "2022-04-20T23:09:35Z",
+          "repo": "tdpatelgit/pg_professional",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Ayush Khajuria",
+      "github": "ayush213",
+      "prCount": 0,
+      "totalPRs": 8,
+      "openPRs": 9,
+      "closedPRs": 3,
+      "orgs": [
+        {
+          "name": "Ryan-Millard",
+          "count": 2
+        },
+        {
+          "name": "bundlab",
+          "count": 1
+        },
+        {
+          "name": "Jaswanth-Kumar-2007",
+          "count": 1
+        },
+        {
+          "name": "manankharwar",
+          "count": 1
+        },
+        {
+          "name": "mavonx",
+          "count": 1
+        },
+        {
+          "name": "ssagar1999",
+          "count": 1
+        },
+        {
+          "name": "TuxedoFish",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Add reusable C++ logging utility and test in main.cpp",
+          "url": "https://github.com/bundlab/enterprise-ai-architecture/pull/5",
+          "number": 5,
+          "state": "merged",
+          "mergedAt": "2026-09-07T10:04:04Z",
+          "createdAt": "2026-08-29T19:37:47Z",
+          "repo": "bundlab/enterprise-ai-architecture",
+          "stars": 1,
+          "forks": 3,
+          "quality": false
+        },
+        {
+          "title": "fix window and stemming logic ( CLEAN PR)",
+          "url": "https://github.com/kiwix/kiwix-desktop/pull/1509",
+          "number": 1509,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-09-06T08:25:24Z",
+          "repo": "kiwix/kiwix-desktop",
+          "stars": 1461,
+          "forks": 179,
+          "quality": true
+        },
+        {
+          "title": "fix resolve surfing latency, missing stemming log, and window switch …",
+          "url": "https://github.com/kiwix/kiwix-desktop/pull/1508",
+          "number": 1508,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-09-06T07:55:53Z",
+          "repo": "kiwix/kiwix-desktop",
+          "stars": 1461,
+          "forks": 179,
+          "quality": true
+        },
+        {
+          "title": "fix: add two independent rejection gates for magnetometer",
+          "url": "https://github.com/manankharwar/fusioncore/pull/86",
+          "number": 86,
+          "state": "merged",
+          "mergedAt": "2026-09-06T02:37:50Z",
+          "createdAt": "2026-09-05T18:35:30Z",
+          "repo": "manankharwar/fusioncore",
+          "stars": 354,
+          "forks": 56,
+          "quality": false
+        },
+        {
+          "title": "ci: add targeted C++ CI workflow for Playerbots scene functions (#19)",
+          "url": "https://github.com/JimWas/WoWPolitics/pull/20",
+          "number": 20,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-09-05T19:46:54Z",
+          "repo": "JimWas/WoWPolitics",
+          "stars": 1,
+          "forks": 1,
+          "quality": false
+        },
+        {
+          "title": "fix(pannel): offload ddcutil initialization to background thread to f…",
+          "url": "https://github.com/WayfireWM/wf-shell/pull/558",
+          "number": 558,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-09-05T19:24:18Z",
+          "repo": "WayfireWM/wf-shell",
+          "stars": 179,
+          "forks": 56,
+          "quality": false
+        },
+        {
+          "title": "fix resolve surfing latency, missing stemming log, and window switch …",
+          "url": "https://github.com/kiwix/kiwix-desktop/pull/1507",
+          "number": 1507,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-09-05T19:09:20Z",
+          "repo": "kiwix/kiwix-desktop",
+          "stars": 1461,
+          "forks": 179,
+          "quality": true
+        },
+        {
+          "title": "fix: make PostgreSQL reconnect retry interval configurable",
+          "url": "https://github.com/drogonframework/drogon/pull/2585",
+          "number": 2585,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-09-05T18:51:21Z",
+          "repo": "drogonframework/drogon",
+          "stars": 14266,
+          "forks": 1381,
+          "quality": true
+        },
+        {
+          "title": "fix: standardize unreadable file error message",
+          "url": "https://github.com/mavonx/hydra/pull/21",
+          "number": 21,
+          "state": "merged",
+          "mergedAt": "2026-09-05T18:42:15Z",
+          "createdAt": "2026-09-05T17:03:08Z",
+          "repo": "mavonx/hydra",
+          "stars": 0,
+          "forks": 4,
+          "quality": false
+        },
+        {
+          "title": "Fix dangling-reference warning in WebsocketMessageParser.cpp",
+          "url": "https://github.com/TuxedoFish/hyperliquid-sdk-cpp/pull/69",
+          "number": 69,
+          "state": "merged",
+          "mergedAt": "2026-09-05T14:18:11Z",
+          "createdAt": "2026-09-05T12:56:58Z",
+          "repo": "TuxedoFish/hyperliquid-sdk-cpp",
+          "stars": 7,
+          "forks": 3,
+          "quality": false
+        },
+        {
+          "title": "fix: cleanup code documentation for issue #578",
+          "url": "https://github.com/eclipse-score/lifecycle/pull/605",
+          "number": 605,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-09-04T17:35:53Z",
+          "repo": "eclipse-score/lifecycle",
+          "stars": 7,
+          "forks": 33,
+          "quality": false
+        },
+        {
+          "title": "Successfully tested ESP-NOW initialization in Wokwi simulator",
+          "url": "https://github.com/Asmit-Singh-01/Decentralized-Mesh-Protocol/pull/21",
+          "number": 21,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-09-01T19:35:08Z",
+          "repo": "Asmit-Singh-01/Decentralized-Mesh-Protocol",
+          "stars": 2,
+          "forks": 3,
+          "quality": false
+        },
+        {
+          "title": "Update Game-Dev README with curated learning resources",
+          "url": "https://github.com/Jaswanth-Kumar-2007/OpenSource-Hunt/pull/310",
+          "number": 310,
+          "state": "merged",
+          "mergedAt": "2026-08-31T10:18:08Z",
+          "createdAt": "2026-08-29T18:59:09Z",
+          "repo": "Jaswanth-Kumar-2007/OpenSource-Hunt",
+          "stars": 10,
+          "forks": 74,
+          "quality": false
+        },
+        {
+          "title": "Fix datadog tool test and update evidence type to metrics",
+          "url": "https://github.com/Tracer-Cloud/opensre/pull/5873",
+          "number": 5873,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-08-30T18:05:13Z",
+          "repo": "Tracer-Cloud/opensre",
+          "stars": 11030,
+          "forks": 1611,
+          "quality": true
+        },
+        {
+          "title": "test: add unit tests for languageQualifier edge cases",
+          "url": "https://github.com/sanjana2505006/Open-Source-Contribution-Tracker/pull/11",
+          "number": 11,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-30T17:18:21Z",
+          "repo": "sanjana2505006/Open-Source-Contribution-Tracker",
+          "stars": 0,
+          "forks": 1,
+          "quality": false
+        },
+        {
+          "title": "Fix/integer overflow graph",
+          "url": "https://github.com/Ryan-Millard/Img2Num/pull/582",
+          "number": 582,
+          "state": "merged",
+          "mergedAt": "2026-08-30T16:28:42Z",
+          "createdAt": "2026-08-29T04:18:36Z",
+          "repo": "Ryan-Millard/Img2Num",
+          "stars": 63,
+          "forks": 47,
+          "quality": false
+        },
+        {
+          "title": "Fix compilation errors and add main.c",
+          "url": "https://github.com/VinayakGhai/TinyFS-UNO/pull/11",
+          "number": 11,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-29T20:27:13Z",
+          "repo": "VinayakGhai/TinyFS-UNO",
+          "stars": 0,
+          "forks": 3,
+          "quality": false
+        },
+        {
+          "title": "[Moore] Add support for OpenUnpackedArrayType constants",
+          "url": "https://github.com/llvm/circt/pull/11058",
+          "number": 11058,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-27T10:28:33Z",
+          "repo": "llvm/circt",
+          "stars": 2238,
+          "forks": 516,
+          "quality": true
+        },
+        {
+          "title": "fix: prevent integer overflow in process_overlapping_edges",
+          "url": "https://github.com/Ryan-Millard/Img2Num/pull/574",
+          "number": 574,
+          "state": "merged",
+          "mergedAt": "2026-08-26T19:46:03Z",
+          "createdAt": "2026-08-26T17:53:12Z",
+          "repo": "Ryan-Millard/Img2Num",
+          "stars": 63,
+          "forks": 47,
+          "quality": false
+        },
+        {
+          "title": "add code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/18",
+          "number": 18,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:51:25Z",
+          "createdAt": "2026-08-20T13:59:23Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Kirtan Maulik Joshi",
+      "github": "ThatKJ",
+      "linkedin": "https://www.linkedin.com/in/kirtan-joshi2412/",
+      "prCount": 0,
+      "totalPRs": 7,
+      "openPRs": 1,
+      "closedPRs": 2,
+      "orgs": [
+        {
+          "name": "ThatKJ",
+          "count": 3
+        },
+        {
+          "name": "PareekshithPalat",
+          "count": 2
+        },
+        {
+          "name": "sonamii",
+          "count": 1
+        },
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "chore: polish FSOC repository for SIH presentation",
+          "url": "https://github.com/ThatKJ/FSOC/pull/2",
+          "number": 2,
+          "state": "merged",
+          "mergedAt": "2026-09-07T04:33:22Z",
+          "createdAt": "2026-09-07T04:24:04Z",
+          "repo": "ThatKJ/FSOC",
+          "stars": 0,
+          "forks": 1,
+          "quality": false
+        },
+        {
+          "title": "feat: freeze FSOC SIH software MVP v2",
+          "url": "https://github.com/ThatKJ/FSOC/pull/1",
+          "number": 1,
+          "state": "merged",
+          "mergedAt": "2026-09-07T03:53:02Z",
+          "createdAt": "2026-09-07T03:52:47Z",
+          "repo": "ThatKJ/FSOC",
+          "stars": 0,
+          "forks": 1,
+          "quality": false
+        },
+        {
+          "title": "Add Kirtan Joshi to welcome",
+          "url": "https://github.com/NST-DEVFORGE/Welcome_to_opensource/pull/3",
+          "number": 3,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-09-05T19:23:31Z",
+          "repo": "NST-DEVFORGE/Welcome_to_opensource",
+          "stars": 0,
+          "forks": 5,
+          "quality": false
+        },
+        {
+          "title": "fix(tui): restore native terminal mouse text selection and copying (#29)",
+          "url": "https://github.com/PareekshithPalat/HADES_CLI/pull/32",
+          "number": 32,
+          "state": "merged",
+          "mergedAt": "2026-09-04T04:45:38Z",
+          "createdAt": "2026-09-02T18:47:35Z",
+          "repo": "PareekshithPalat/HADES_CLI",
+          "stars": 0,
+          "forks": 5,
+          "quality": false
+        },
+        {
+          "title": "feat(storage, core, tui): implement cross-platform session import & e…",
+          "url": "https://github.com/PareekshithPalat/HADES_CLI/pull/30",
+          "number": 30,
+          "state": "merged",
+          "mergedAt": "2026-09-02T17:29:25Z",
+          "createdAt": "2026-09-02T15:56:19Z",
+          "repo": "PareekshithPalat/HADES_CLI",
+          "stars": 0,
+          "forks": 5,
+          "quality": false
+        },
+        {
+          "title": "Fall back to editor for non-image files with image extensions",
+          "url": "https://github.com/zed-industries/zed/pull/63611",
+          "number": 63611,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-09-02T09:38:48Z",
+          "repo": "zed-industries/zed",
+          "stars": 90071,
+          "forks": 10535,
+          "quality": true
+        },
+        {
+          "title": "Fix fallback for non-image files",
+          "url": "https://github.com/zed-industries/zed/pull/63455",
+          "number": 63455,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-08-30T17:56:08Z",
+          "repo": "zed-industries/zed",
+          "stars": 90071,
+          "forks": 10535,
+          "quality": true
+        },
+        {
+          "title": "docs: revamp Next Bench README",
+          "url": "https://github.com/sonamii/next-bench/pull/33",
+          "number": 33,
+          "state": "merged",
+          "mergedAt": "2026-08-26T17:11:56Z",
+          "createdAt": "2026-08-26T16:59:28Z",
+          "repo": "sonamii/next-bench",
+          "stars": 4,
+          "forks": 2,
+          "quality": false
+        },
+        {
+          "title": "Add profile.json for Kirtan Joshi",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/58",
+          "number": 58,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:49:27Z",
+          "createdAt": "2026-08-20T14:05:24Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        },
+        {
+          "title": "Refactor hero methodology strip — centered layout, vertical icons, 70% container",
+          "url": "https://github.com/ThatKJ/awoken.in/pull/1",
+          "number": 1,
+          "state": "merged",
+          "mergedAt": "2026-07-15T11:21:59Z",
+          "createdAt": "2026-07-15T11:21:25Z",
+          "repo": "ThatKJ/awoken.in",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Samyak jain",
+      "github": "ritujain8638-source",
+      "prCount": 0,
+      "totalPRs": 7,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ritujain8638-source",
+          "count": 6
+        },
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Agents/open first html file",
+          "url": "https://github.com/ritujain8638-source/New-beginning-/pull/6",
+          "number": 6,
+          "state": "merged",
+          "mergedAt": "2026-09-04T13:35:20Z",
+          "createdAt": "2026-09-04T13:34:00Z",
+          "repo": "ritujain8638-source/New-beginning-",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "Agents/open first html file",
+          "url": "https://github.com/ritujain8638-source/New-beginning-/pull/5",
+          "number": 5,
+          "state": "merged",
+          "mergedAt": "2026-09-03T19:21:33Z",
+          "createdAt": "2026-09-03T19:21:23Z",
+          "repo": "ritujain8638-source/New-beginning-",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "Agents/open first html file",
+          "url": "https://github.com/ritujain8638-source/New-beginning-/pull/4",
+          "number": 4,
+          "state": "merged",
+          "mergedAt": "2026-09-03T17:06:14Z",
+          "createdAt": "2026-09-03T17:06:03Z",
+          "repo": "ritujain8638-source/New-beginning-",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "Add secure backend and payment checkout",
+          "url": "https://github.com/ritujain8638-source/New-beginning-/pull/3",
+          "number": 3,
+          "state": "merged",
+          "mergedAt": "2026-09-03T16:19:25Z",
+          "createdAt": "2026-09-03T16:19:13Z",
+          "repo": "ritujain8638-source/New-beginning-",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "Add live cart and user session features",
+          "url": "https://github.com/ritujain8638-source/New-beginning-/pull/2",
+          "number": 2,
+          "state": "merged",
+          "mergedAt": "2026-09-03T16:07:21Z",
+          "createdAt": "2026-09-03T16:07:10Z",
+          "repo": "ritujain8638-source/New-beginning-",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "Build Food with Heath website layout",
+          "url": "https://github.com/ritujain8638-source/New-beginning-/pull/1",
+          "number": 1,
+          "state": "merged",
+          "mergedAt": "2026-09-03T04:46:01Z",
+          "createdAt": "2026-09-03T04:45:45Z",
+          "repo": "ritujain8638-source/New-beginning-",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "Initial commit ",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/84",
+          "number": 84,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:48:02Z",
+          "createdAt": "2026-08-20T14:35:11Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Ejaz Ahamed Khan",
+      "github": "ejazahamed08",
+      "linkedin": "https://www.linkedin.com/in/ejaz-ahamed-3223a242b/",
+      "prCount": 0,
+      "totalPRs": 4,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ejazahamed08",
+          "count": 3
+        },
+        {
+          "name": "tdpatelgit",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "ai write ts lmao",
+          "url": "https://github.com/ejazahamed08/mario-pygame/pull/3",
+          "number": 3,
+          "state": "merged",
+          "mergedAt": "2026-08-30T13:42:12Z",
+          "createdAt": "2026-08-30T13:42:04Z",
+          "repo": "ejazahamed08/mario-pygame",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "Update mario.py",
+          "url": "https://github.com/ejazahamed08/mario-pygame/pull/2",
+          "number": 2,
+          "state": "merged",
+          "mergedAt": "2026-08-30T13:06:29Z",
+          "createdAt": "2026-08-30T13:06:21Z",
+          "repo": "ejazahamed08/mario-pygame",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "changing world to manav cuz he my world",
+          "url": "https://github.com/ejazahamed08/mario-pygame/pull/1",
+          "number": 1,
+          "state": "merged",
+          "mergedAt": "2026-08-30T12:58:14Z",
+          "createdAt": "2026-08-30T12:57:58Z",
+          "repo": "ejazahamed08/mario-pygame",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "Add ejaz to README",
+          "url": "https://github.com/tdpatelgit/OpenAI-WebMCP/pull/4",
+          "number": 4,
+          "state": "merged",
+          "mergedAt": "2026-08-26T09:53:35Z",
+          "createdAt": "2026-08-26T08:44:56Z",
+          "repo": "tdpatelgit/OpenAI-WebMCP",
+          "stars": 0,
+          "forks": 4,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Harsh Nahar",
+      "github": "harshnahar07hmn",
+      "prCount": 0,
+      "totalPRs": 4,
+      "openPRs": 0,
+      "closedPRs": 1,
+      "orgs": [
+        {
+          "name": "tdpatelgit",
+          "count": 3
+        },
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Update README.md",
+          "url": "https://github.com/tdpatelgit/OpenAI-WebMCP/pull/8",
+          "number": 8,
+          "state": "merged",
+          "mergedAt": "2026-09-02T17:09:27Z",
+          "createdAt": "2026-09-02T17:08:16Z",
+          "repo": "tdpatelgit/OpenAI-WebMCP",
+          "stars": 0,
+          "forks": 4,
+          "quality": false
+        },
+        {
+          "title": "Update README.md",
+          "url": "https://github.com/tdpatelgit/OpenAI-WebMCP/pull/7",
+          "number": 7,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-09-02T16:35:30Z",
+          "repo": "tdpatelgit/OpenAI-WebMCP",
+          "stars": 0,
+          "forks": 4,
+          "quality": false
+        },
+        {
+          "title": "hi",
+          "url": "https://github.com/tdpatelgit/OpenAI-WebMCP/pull/6",
+          "number": 6,
+          "state": "merged",
+          "mergedAt": "2026-08-26T09:58:17Z",
+          "createdAt": "2026-08-26T09:57:30Z",
+          "repo": "tdpatelgit/OpenAI-WebMCP",
+          "stars": 0,
+          "forks": 4,
+          "quality": false
+        },
+        {
+          "title": "hi",
+          "url": "https://github.com/tdpatelgit/OpenAI-WebMCP/pull/1",
+          "number": 1,
+          "state": "merged",
+          "mergedAt": "2026-08-26T08:08:05Z",
+          "createdAt": "2026-08-26T08:07:49Z",
+          "repo": "tdpatelgit/OpenAI-WebMCP",
+          "stars": 0,
+          "forks": 4,
+          "quality": false
+        },
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/45",
+          "number": 45,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:50:01Z",
+          "createdAt": "2026-08-20T14:01:27Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Harshit Kandpal",
+      "github": "Harshit-2208",
+      "prCount": 0,
+      "totalPRs": 3,
+      "openPRs": 1,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "aryangetsreal",
+          "count": 2
+        },
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "oi oi",
+          "url": "https://github.com/aryangetsreal/Hi-lol/pull/2",
+          "number": 2,
+          "state": "merged",
+          "mergedAt": "2026-09-08T06:06:00Z",
+          "createdAt": "2026-09-08T06:05:10Z",
+          "repo": "aryangetsreal/Hi-lol",
+          "stars": 0,
+          "forks": 1,
+          "quality": false
+        },
+        {
+          "title": "Added an Multiplication operation",
+          "url": "https://github.com/aryangetsreal/Hi-lol/pull/1",
+          "number": 1,
+          "state": "merged",
+          "mergedAt": "2026-09-07T13:16:42Z",
+          "createdAt": "2026-09-07T09:45:53Z",
+          "repo": "aryangetsreal/Hi-lol",
+          "stars": 0,
+          "forks": 1,
+          "quality": false
+        },
+        {
+          "title": "Harshit Kandpal",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/128",
+          "number": 128,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-23T19:28:35Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        },
+        {
+          "title": "the Pull request",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/91",
+          "number": 91,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:47:48Z",
+          "createdAt": "2026-08-20T15:57:01Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Tejas Rastogi",
+      "github": "Tejasrastogi",
+      "linkedin": "https://www.linkedin.com/in/tejas-rastogi-21528a422?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      "prCount": 0,
+      "totalPRs": 3,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "tdpatelgit",
+          "count": 2
+        },
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Create index.html",
+          "url": "https://github.com/tdpatelgit/OpenAI-WebMCP/pull/5",
+          "number": 5,
+          "state": "merged",
+          "mergedAt": "2026-08-26T09:54:16Z",
+          "createdAt": "2026-08-26T09:54:00Z",
+          "repo": "tdpatelgit/OpenAI-WebMCP",
+          "stars": 0,
+          "forks": 4,
+          "quality": false
+        },
+        {
+          "title": "Hello",
+          "url": "https://github.com/tdpatelgit/OpenAI-WebMCP/pull/3",
+          "number": 3,
+          "state": "merged",
+          "mergedAt": "2026-08-26T08:24:39Z",
+          "createdAt": "2026-08-26T08:23:12Z",
+          "repo": "tdpatelgit/OpenAI-WebMCP",
+          "stars": 0,
+          "forks": 4,
+          "quality": false
+        },
+        {
+          "title": "I can use git ",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/12",
+          "number": 12,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:51:42Z",
+          "createdAt": "2026-08-20T13:57:24Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Ashvanth",
+      "github": "Ashvanth-gif",
+      "linkedin": "https://www.linkedin.com/in/ashvanth-gandham-969a35365/",
+      "prCount": 0,
+      "totalPRs": 2,
+      "openPRs": 1,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "pradipNP",
+          "count": 2
+        }
+      ],
+      "prs": [
+        {
+          "title": "Fix empty chart output in Google Colab",
+          "url": "https://github.com/spotify/chartify/pull/182",
+          "number": 182,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-09-08T04:16:36Z",
+          "repo": "spotify/chartify",
+          "stars": 3644,
+          "forks": 334,
+          "quality": true
+        },
+        {
+          "title": "fix: repair star-drift syntax errors, add missing sound.js exports, implement Enter-to-start",
+          "url": "https://github.com/pradipNP/khelzon/pull/49",
+          "number": 49,
+          "state": "merged",
+          "mergedAt": "2026-09-03T12:00:24Z",
+          "createdAt": "2026-09-02T10:28:24Z",
+          "repo": "pradipNP/khelzon",
+          "stars": 1,
+          "forks": 10,
+          "quality": false
+        },
+        {
+          "title": "feat: add share score button with Web Share API + clipboard fallback",
+          "url": "https://github.com/pradipNP/khelzon/pull/27",
+          "number": 27,
+          "state": "merged",
+          "mergedAt": "2026-08-30T04:40:06Z",
+          "createdAt": "2026-08-29T18:40:26Z",
+          "repo": "pradipNP/khelzon",
+          "stars": 1,
+          "forks": 10,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "BONTHU BALAJI",
+      "github": "BONTHUBALAJI",
+      "prCount": 0,
+      "totalPRs": 2,
+      "openPRs": 1,
+      "closedPRs": 1,
+      "orgs": [
+        {
+          "name": "BONTHUBALAJI",
+          "count": 2
+        }
+      ],
+      "prs": [
+        {
+          "title": "18th",
+          "url": "https://github.com/BONTHUBALAJI/training/pull/3",
+          "number": 3,
+          "state": "merged",
+          "mergedAt": "2026-09-08T08:16:46Z",
+          "createdAt": "2026-09-08T08:14:39Z",
+          "repo": "BONTHUBALAJI/training",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "balaji",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/132",
+          "number": 132,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-27T13:12:27Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        },
+        {
+          "title": "hacked akshai",
+          "url": "https://github.com/BONTHUBALAJI/training/pull/2",
+          "number": 2,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-08-20T17:29:20Z",
+          "repo": "BONTHUBALAJI/training",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "Bunny",
+          "url": "https://github.com/BONTHUBALAJI/training/pull/1",
+          "number": 1,
+          "state": "merged",
+          "mergedAt": "2026-08-20T17:28:43Z",
+          "createdAt": "2026-08-20T17:27:10Z",
+          "repo": "BONTHUBALAJI/training",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Laltesh Chaudhary",
+      "github": "CrackerHacker451",
+      "linkedin": "https://www.linkedin.com/in/laltesh-chaudhary-031a032a7?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 2,
+      "openPRs": 2,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "CrackerHacker451",
+          "count": 2
+        }
+      ],
+      "prs": [
+        {
+          "title": "Add debug HUD overlay",
+          "url": "https://github.com/CrackerHacker451/gameBase/pull/1",
+          "number": 1,
+          "state": "merged",
+          "mergedAt": "2026-08-26T16:04:50Z",
+          "createdAt": "2026-08-26T16:04:39Z",
+          "repo": "CrackerHacker451/gameBase",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "Create Aditya Ghople",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/125",
+          "number": 125,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-22T13:20:21Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        },
+        {
+          "title": "Add student profile for Laltesh Chaudhary",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/124",
+          "number": 124,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-22T13:06:45Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        },
+        {
+          "title": "Update Justgetit",
+          "url": "https://github.com/CrackerHacker451/CrackerHacker451/pull/1",
+          "number": 1,
+          "state": "merged",
+          "mergedAt": "2026-08-21T10:31:30Z",
+          "createdAt": "2022-06-01T05:44:01Z",
+          "repo": "CrackerHacker451/CrackerHacker451",
+          "stars": 1,
+          "forks": 0,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Prantik Sarkar",
+      "github": "Prantik248",
+      "prCount": 0,
+      "totalPRs": 2,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        },
+        {
+          "name": "tdpatelgit",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "hi",
+          "url": "https://github.com/tdpatelgit/OpenAI-WebMCP/pull/2",
+          "number": 2,
+          "state": "merged",
+          "mergedAt": "2026-08-26T08:20:08Z",
+          "createdAt": "2026-08-26T08:19:46Z",
+          "repo": "tdpatelgit/OpenAI-WebMCP",
+          "stars": 0,
+          "forks": 4,
+          "quality": false
+        },
+        {
+          "title": "Add Prantik's profile",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/103",
+          "number": 103,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:47:08Z",
+          "createdAt": "2026-08-20T18:29:24Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Saksham Jaiswal",
+      "github": "saksham1319",
+      "linkedin": "https://www.linkedin.com/in/saksham6975?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "website": "https://saksham1319.vercel.app/",
+      "prCount": 0,
+      "totalPRs": 2,
+      "openPRs": 2,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "prismio-lang",
+          "count": 1
+        },
+        {
+          "name": "saksham1319",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Added languages",
+          "url": "https://github.com/saksham1319/BIS/pull/3",
+          "number": 3,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-09-10T09:33:29Z",
+          "repo": "saksham1319/BIS",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "s",
+          "url": "https://github.com/saksham1319/BIS/pull/2",
+          "number": 2,
+          "state": "merged",
+          "mergedAt": "2026-09-10T09:29:45Z",
+          "createdAt": "2026-09-10T09:29:35Z",
+          "repo": "saksham1319/BIS",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "Added languages",
+          "url": "https://github.com/saksham1319/BIS/pull/1",
+          "number": 1,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-09-10T09:23:35Z",
+          "repo": "saksham1319/BIS",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        },
+        {
+          "title": "Cross-language measurement (Rust/Swift), and turn the optimiser on",
+          "url": "https://github.com/prismio-lang/prismio/pull/1",
+          "number": 1,
+          "state": "merged",
+          "mergedAt": "2026-08-08T20:25:00Z",
+          "createdAt": "2026-08-08T20:23:54Z",
+          "repo": "prismio-lang/prismio",
+          "stars": 3,
+          "forks": 0,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Abhirup Karmakar",
+      "github": "AbhirupKarmakar",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "firstcommit",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/93",
+          "number": 93,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:47:42Z",
+          "createdAt": "2026-08-20T16:33:21Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Adhithya Pandiri",
+      "github": "adhithyapandiri-a11y",
+      "linkedin": "https://www.linkedin.com/in/adhithyapandiri",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 1,
+      "closedPRs": 12,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "fix(twenty-front): match floating inline cell editor width to reference anchor",
+          "url": "https://github.com/twentyhq/twenty/pull/25498",
+          "number": 25498,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-09-06T07:44:56Z",
+          "repo": "twentyhq/twenty",
+          "stars": 56566,
+          "forks": 9030,
+          "quality": true
+        },
+        {
+          "title": "fix(twenty-front): pair parent record with its metadata in relation section dropdown",
+          "url": "https://github.com/twentyhq/twenty/pull/25497",
+          "number": 25497,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-09-06T07:26:26Z",
+          "repo": "twentyhq/twenty",
+          "stars": 56566,
+          "forks": 9030,
+          "quality": true
+        },
+        {
+          "title": "fix(twenty-server): separate app-dev file upload throttle budget",
+          "url": "https://github.com/twentyhq/twenty/pull/25493",
+          "number": 25493,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-09-06T06:19:59Z",
+          "repo": "twentyhq/twenty",
+          "stars": 56566,
+          "forks": 9030,
+          "quality": true
+        },
+        {
+          "title": "fix(twenty-front): parse escaped value when persisting percentage number field",
+          "url": "https://github.com/twentyhq/twenty/pull/25492",
+          "number": 25492,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-09-06T06:14:23Z",
+          "repo": "twentyhq/twenty",
+          "stars": 56566,
+          "forks": 9030,
+          "quality": true
+        },
+        {
+          "title": "fix(twenty-front): skip aggregate refetch on no-op SSE update echoes",
+          "url": "https://github.com/twentyhq/twenty/pull/25491",
+          "number": 25491,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-09-06T06:03:09Z",
+          "repo": "twentyhq/twenty",
+          "stars": 56566,
+          "forks": 9030,
+          "quality": true
+        },
+        {
+          "title": "fix(auth): mark OAuth callback URLs as env-only and resolve dynamically",
+          "url": "https://github.com/twentyhq/twenty/pull/25490",
+          "number": 25490,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-09-06T05:59:59Z",
+          "repo": "twentyhq/twenty",
+          "stars": 56566,
+          "forks": 9030,
+          "quality": true
+        },
+        {
+          "title": "fix(twenty-server): resolve standard objects for app-defined indexes",
+          "url": "https://github.com/twentyhq/twenty/pull/25488",
+          "number": 25488,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-09-06T05:54:11Z",
+          "repo": "twentyhq/twenty",
+          "stars": 56566,
+          "forks": 9030,
+          "quality": true
+        },
+        {
+          "title": "fix(twenty-server): scope post-commit cache invalidation to mutated metadata",
+          "url": "https://github.com/twentyhq/twenty/pull/25487",
+          "number": 25487,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-09-06T05:45:32Z",
+          "repo": "twentyhq/twenty",
+          "stars": 56566,
+          "forks": 9030,
+          "quality": true
+        },
+        {
+          "title": "fix(twenty-front): preserve text effects in closed rich text cells",
+          "url": "https://github.com/twentyhq/twenty/pull/25486",
+          "number": 25486,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-09-06T05:23:00Z",
+          "repo": "twentyhq/twenty",
+          "stars": 56566,
+          "forks": 9030,
+          "quality": true
+        },
+        {
+          "title": "fix(twenty-shared): support SQL wildcards in array containsIlike filter",
+          "url": "https://github.com/twentyhq/twenty/pull/25485",
+          "number": 25485,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-09-06T05:10:52Z",
+          "repo": "twentyhq/twenty",
+          "stars": 56566,
+          "forks": 9030,
+          "quality": true
+        },
+        {
+          "title": "fix(advanced-text-editor): preserve editor content across fullscreen …",
+          "url": "https://github.com/twentyhq/twenty/pull/25018",
+          "number": 25018,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-08-29T09:23:55Z",
+          "repo": "twentyhq/twenty",
+          "stars": 56566,
+          "forks": 9030,
+          "quality": true
+        },
+        {
+          "title": "fix(navigation): prevent duplicate object navigation menu items",
+          "url": "https://github.com/twentyhq/twenty/pull/24925",
+          "number": 24925,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-08-27T12:53:52Z",
+          "repo": "twentyhq/twenty",
+          "stars": 56566,
+          "forks": 9030,
+          "quality": true
+        },
+        {
+          "title": "Add  Adhithya's Profile",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/9",
+          "number": 9,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:51:53Z",
+          "createdAt": "2026-08-20T13:56:41Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        },
+        {
+          "title": "Update project files",
+          "url": "https://github.com/adhithyapandiri-a11y/SyntaxSquad/pull/1",
+          "number": 1,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-07-26T12:07:25Z",
+          "repo": "adhithyapandiri-a11y/SyntaxSquad",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Aditya Goyal",
+      "github": "goyaladitay11",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/48",
+          "number": 48,
+          "state": "merged",
+          "mergedAt": "2026-08-20T14:03:05Z",
+          "createdAt": "2026-08-20T14:01:54Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Aditya mishra",
+      "github": "adityamishra-cell",
+      "linkedin": "https://www.linkedin.com/in/aditya-rl/",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Add profile.json for Aditya Mishra",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/62",
+          "number": 62,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:49:17Z",
+          "createdAt": "2026-08-20T14:21:40Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Akash Ramanathan Iyer",
+      "github": "akash-iyer-27",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Add Akash's profile",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/38",
+          "number": 38,
+          "state": "merged",
+          "mergedAt": "2026-08-20T14:01:12Z",
+          "createdAt": "2026-08-20T14:00:53Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Akshat P S Bhadauria",
+      "github": "akshh-bot",
+      "linkedin": "https://www.linkedin.com/in/akshat-pratap-singh-933301423?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 1,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "first pull request",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/57",
+          "number": 57,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:49:30Z",
+          "createdAt": "2026-08-20T14:05:20Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        },
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/17",
+          "number": 17,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-08-20T13:58:50Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Akshat Singh",
+      "github": "akshatsingh202007-ui",
+      "linkedin": "https://www.linkedin.com/in/akshat-singh-ba7a9127b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "session",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/32",
+          "number": 32,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:50:40Z",
+          "createdAt": "2026-08-20T14:00:24Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Ananya Pathak",
+      "github": "ananyapathak-dev",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/36",
+          "number": 36,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:50:26Z",
+          "createdAt": "2026-08-20T14:00:41Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Anindita Das",
+      "github": "Anindita4505",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/33",
+          "number": 33,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:50:37Z",
+          "createdAt": "2026-08-20T14:00:27Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Apurv Tiwari",
+      "github": "apurvtiwari15",
+      "linkedin": "https://www.linkedin.com/in/apurv-tiwari-3118b2430?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Added my profile",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/105",
+          "number": 105,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:47:01Z",
+          "createdAt": "2026-08-20T18:43:23Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Archisman Pal",
+      "github": "archismanpal07",
+      "linkedin": "https://www.linkedin.com/in/archismanpal07",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "this is my first commit",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/88",
+          "number": 88,
+          "state": "merged",
+          "mergedAt": "2026-08-20T14:50:16Z",
+          "createdAt": "2026-08-20T14:37:33Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Arjun Shukla",
+      "github": "ArjunShukla76",
+      "linkedin": "https://www.linkedin.com/in/arjun-shukla-18170b2a8?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "First pull request after so many tries",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/110",
+          "number": 110,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:37:03Z",
+          "createdAt": "2026-08-20T21:40:56Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Arnav Sharma",
+      "github": "arnavsharma294-png",
+      "linkedin": "https://www.linkedin.com/in/arnav-sharma-2677b1421",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "I added some info about myself",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/97",
+          "number": 97,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:47:28Z",
+          "createdAt": "2026-08-20T16:46:20Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Aruna Ramanathan Iyer",
+      "github": "aruna-iyer",
+      "linkedin": "https://www.linkedin.com/in/aruna-iyer/",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/26",
+          "number": 26,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:51:00Z",
+          "createdAt": "2026-08-20T14:00:16Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Aryan Dixit",
+      "github": "SuspiciousChip",
+      "linkedin": "https://www.linkedin.com/in/aryan-dixit-043789404?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Aryan's pr",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/63",
+          "number": 63,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:49:14Z",
+          "createdAt": "2026-08-20T14:21:54Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "ARYAN SIROHI",
+      "github": "aryansirohi2121-coder",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "firstpr",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/64",
+          "number": 64,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:49:10Z",
+          "createdAt": "2026-08-20T14:24:36Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "B Aadarsh",
+      "github": "MassGethu",
+      "linkedin": "https://www.linkedin.com/in/aadarsh-b-54811a419/",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Aadarsh",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/80",
+          "number": 80,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:48:15Z",
+          "createdAt": "2026-08-20T14:31:12Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Bhavyarajsinh Bhemsinh Amala",
+      "github": "bhavyarajsinh1510",
+      "linkedin": "https://www.linkedin.com/in/bhavyaraj-amala-b92a0b421?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Created profile.json for Bhavyaraj.",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/70",
+          "number": 70,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:48:49Z",
+          "createdAt": "2026-08-20T14:28:11Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Chanchal Agarwal",
+      "github": "chanchalagarwal3580",
+      "linkedin": "https://www.linkedin.com/in/chanhcal-agarwal-569616358/",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "this is my first dev club",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/73",
+          "number": 73,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:48:42Z",
+          "createdAt": "2026-08-20T14:28:53Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Darshil P Jain",
+      "github": "darshilved99-svg",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/40",
+          "number": 40,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:50:19Z",
+          "createdAt": "2026-08-20T14:01:15Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Dhairya Agrawal",
+      "github": "dhairyaagrawalcode",
+      "linkedin": "https://www.linkedin.com/in/dhairya-agrawal-102307341/",
+      "website": "https://dhairya-agrawal.vercel.app/",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 2,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "docs: add api endpoint documentation",
+          "url": "https://github.com/ibrahimqarayev/open-spring-lab/pull/81",
+          "number": 81,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-29T07:51:18Z",
+          "repo": "ibrahimqarayev/open-spring-lab",
+          "stars": 6,
+          "forks": 13,
+          "quality": false
+        },
+        {
+          "title": "Fix broken Jupyter Book link",
+          "url": "https://github.com/the-turing-way/the-turing-way/pull/4698",
+          "number": 4698,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-26T20:02:25Z",
+          "repo": "the-turing-way/the-turing-way",
+          "stars": 2176,
+          "forks": 774,
+          "quality": true
+        },
+        {
+          "title": "Added Code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/14",
+          "number": 14,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:51:36Z",
+          "createdAt": "2026-08-20T13:58:02Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "DIPIKA",
+      "github": "drathava847-beep",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "git code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/21",
+          "number": 21,
+          "state": "merged",
+          "mergedAt": "2026-08-20T14:00:09Z",
+          "createdAt": "2026-08-20T13:59:48Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "divyansh Kushwaha",
+      "github": "divyanshkush437-source",
+      "linkedin": "https://www.linkedin.com/in/divyansh-kushwaha-1b8711336/",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": " this is my first commit",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/76",
+          "number": 76,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:48:31Z",
+          "createdAt": "2026-08-20T14:29:00Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Garv Sanveria",
+      "github": "garv-sanveria",
+      "linkedin": "https://www.linkedin.com/in/garv-sanveria-59813b380/",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "this is my first time in nst classroom",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/74",
+          "number": 74,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:48:38Z",
+          "createdAt": "2026-08-20T14:28:55Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "H Nishanth Rao",
+      "github": "raonishanth2000-hub",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "New code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/27",
+          "number": 27,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:50:57Z",
+          "createdAt": "2026-08-20T14:00:16Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Harshit Raj",
+      "github": "harryX18",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/95",
+          "number": 95,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:47:36Z",
+          "createdAt": "2026-08-20T16:40:24Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Harshita Dhakad",
+      "github": "Harshita-max4484",
+      "linkedin": "https://www.linkedin.com/in/harshita-dhakad-b978a5422?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "hi",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/61",
+          "number": 61,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:49:21Z",
+          "createdAt": "2026-08-20T14:19:41Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "J Yashwanth Raj",
+      "github": "TheAstro1",
+      "linkedin": "https://linkedin.com/in/yashwanth-raj-06a891339",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added code ",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/37",
+          "number": 37,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:50:22Z",
+          "createdAt": "2026-08-20T14:00:52Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "JEEVAN BASAPPA BAGI",
+      "github": "jeevan1668",
+      "linkedin": "https://www.linkedin.com/in/jeevan-basappa-bagi-987938430/",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added profile",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/75",
+          "number": 75,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:48:35Z",
+          "createdAt": "2026-08-20T14:29:00Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "K Chethan Chowdhary",
+      "github": "chethanchowdharykantamneni-design",
+      "linkedin": "https://www.linkedin.com/in/chethan-chowdhary-kantamneni-628191375/",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 1,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "My first Try",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/56",
+          "number": 56,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:49:34Z",
+          "createdAt": "2026-08-20T14:04:42Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        },
+        {
+          "title": "Update CONTRIBUTING.md",
+          "url": "https://github.com/firstcontributions/first-contributions/pull/118841",
+          "number": 118841,
+          "state": "closed",
+          "mergedAt": null,
+          "createdAt": "2026-06-10T14:23:49Z",
+          "repo": "firstcontributions/first-contributions",
+          "stars": 55889,
+          "forks": 109174,
+          "quality": true
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "K.Eshanth Reddy",
+      "github": "reddieshanth-cpu",
+      "linkedin": "https://www.linkedin.com/in/k-eshanth-reddy-643483421?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "reddieshanth-cpu",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "my first pull request",
+          "url": "https://github.com/reddieshanth-cpu/our-dev-wall/pull/1",
+          "number": 1,
+          "state": "merged",
+          "mergedAt": "2026-08-27T13:22:02Z",
+          "createdAt": "2026-08-20T14:02:06Z",
+          "repo": "reddieshanth-cpu/our-dev-wall",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Kakul Kashyap Deka",
+      "github": "kakuldeka",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "yesyes",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/44",
+          "number": 44,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:50:05Z",
+          "createdAt": "2026-08-20T14:01:26Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Kartik Khandelwal",
+      "github": "Illtrapx",
+      "linkedin": "https://www.linkedin.com/in/kartik-khandelwal-a84a14252",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "add kartik profile",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/5",
+          "number": 5,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:52:07Z",
+          "createdAt": "2026-08-20T13:51:05Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Kartik Yadav",
+      "github": "kartikyadav090607",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/31",
+          "number": 31,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:50:43Z",
+          "createdAt": "2026-08-20T14:00:21Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Kavin Rau",
+      "github": "vexital-05",
+      "linkedin": "https://www.linkedin.com/in/kavincodes/",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Add Kavin's Profile and Introduction",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/60",
+          "number": 60,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:49:24Z",
+          "createdAt": "2026-08-20T14:11:16Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Konduru Lakshmi sai Praneethl",
+      "github": "SaiPraneeth63",
+      "linkedin": "https://www.linkedin.com/in/konduru-lakshmi-sai-praneeth-abba75382",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 1,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "SaiPraneeth added details",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/114",
+          "number": 114,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-21T06:38:47Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        },
+        {
+          "title": "I made some changes",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/68",
+          "number": 68,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:48:56Z",
+          "createdAt": "2026-08-20T14:27:28Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Kovid Jain",
+      "github": "kovidjain",
+      "linkedin": "https://www.linkedin.com/public-profile/settings/?trk=d_flagship3_profile_self_view_public_profile&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BN7LNtIxoTkaiHa8Bs6kR7g%3D%3D",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/43",
+          "number": 43,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:50:08Z",
+          "createdAt": "2026-08-20T14:01:25Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Naincy Meravi",
+      "github": "aashimeravi8-cloud",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Naincy's Pr",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/102",
+          "number": 102,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:47:11Z",
+          "createdAt": "2026-08-20T18:10:51Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Neeraj Kumar Sahu",
+      "github": "NeerajSahu2008",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/16",
+          "number": 16,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:51:29Z",
+          "createdAt": "2026-08-20T13:58:30Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Prachi Darshi",
+      "github": "prachidarshi-2307",
+      "linkedin": "https://www.linkedin.com/in/prachi-darshi-540288405?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/35",
+          "number": 35,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:50:29Z",
+          "createdAt": "2026-08-20T14:00:40Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Pranav Sankhyan",
+      "github": "Dev-Pranav-Sankhyan",
+      "linkedin": "https://www.linkedin.com/in/pranav-sankhyan-631bb3421",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Sir I did my first pr request",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/3",
+          "number": 3,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:52:14Z",
+          "createdAt": "2026-08-20T13:35:35Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Prathamesh Kanase",
+      "github": "kanaseprathamesh568-a11y",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "pr",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/98",
+          "number": 98,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:47:25Z",
+          "createdAt": "2026-08-20T16:48:27Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Prince shamra",
+      "github": "PrinceCodes07-eng",
+      "linkedin": "https://www.linkedin.com/in/prince-sharma-56397a421?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/41",
+          "number": 41,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:50:15Z",
+          "createdAt": "2026-08-20T14:01:17Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Prithvi Kumar Singh",
+      "github": "Prithvi-gif",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/22",
+          "number": 22,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:51:15Z",
+          "createdAt": "2026-08-20T14:00:00Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Raghav Sharma",
+      "github": "raghav-sharma-ai",
+      "linkedin": "https://www.linkedin.com/in/raghav-sharma-93288a414?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "change done",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/87",
+          "number": 87,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:47:55Z",
+          "createdAt": "2026-08-20T14:35:58Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Sagir Alam Sk",
+      "github": "SagirAlamSk",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "my first pull request",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/6",
+          "number": 6,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:52:03Z",
+          "createdAt": "2026-08-20T13:51:43Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Shivam Kumar",
+      "github": "Prince139-ai",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "shivam kumar",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/77",
+          "number": 77,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:48:27Z",
+          "createdAt": "2026-08-20T14:30:00Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Sk Md Firdous",
+      "github": "skmdfirdousf34",
+      "linkedin": "https://www.linkedin.com/in/firdous-sk?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "website": "https://skmdfirdous.vercel.app/",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "firstcommit",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/79",
+          "number": 79,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:48:19Z",
+          "createdAt": "2026-08-20T14:31:00Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Twinkle",
+      "github": "twi-ni",
+      "linkedin": "https://www.linkedin.com/in/twinkle-b67885430",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Twinkle's PR",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/51",
+          "number": 51,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:49:51Z",
+          "createdAt": "2026-08-20T14:03:24Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Ujjwal Dubey",
+      "github": "UjjwalDubey8810",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/23",
+          "number": 23,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:51:10Z",
+          "createdAt": "2026-08-20T14:00:06Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Umair Kadiroddin Shaikh",
+      "github": "umairkai",
+      "linkedin": "https://www.linkedin.com/in/umair-shaikh-33ab68240?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added profile",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/78",
+          "number": 78,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:48:23Z",
+          "createdAt": "2026-08-20T14:30:19Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Vaishnavi choudhary",
+      "github": "mnivaishnavi-ctrl",
+      "linkedin": "https://www.linkedin.com/in/vaishnavi-choudhary-649ba7430?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/59",
+          "number": 59,
+          "state": "merged",
+          "mergedAt": "2026-08-20T14:10:33Z",
+          "createdAt": "2026-08-20T14:09:00Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Varun pateriya",
+      "github": "varunpateriya01",
+      "linkedin": "https://www.linkedin.com/in/varun-pateriya-60049842b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "I have made some changes",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/100",
+          "number": 100,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:47:18Z",
+          "createdAt": "2026-08-20T17:10:22Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Vedant Saware",
+      "github": "vedu-lab",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "firstcommit",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/108",
+          "number": 108,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:38:17Z",
+          "createdAt": "2026-08-20T19:13:04Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Venkata Vishaleswar Reddy kandula",
+      "github": "kvvishal7396",
+      "linkedin": "https://www.linkedin.com/in/venkata-vishaleswar-reddy-kandula-a4b2b442b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "change done",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/86",
+          "number": 86,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:47:58Z",
+          "createdAt": "2026-08-20T14:35:49Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Vinay Shambuling bichchali",
+      "github": "vinay34744",
+      "linkedin": "https://www.linkedin.com/in/vinay-bichali-1550ba275?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 1,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [
+        {
+          "name": "ssagar1999",
+          "count": 1
+        }
+      ],
+      "prs": [
+        {
+          "title": "Vinay ki pr",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/99",
+          "number": 99,
+          "state": "merged",
+          "mergedAt": "2026-08-21T05:47:21Z",
+          "createdAt": "2026-08-20T16:55:31Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Aadishree Joshi",
+      "github": "aadishree",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "AAYUSH RAJ",
+      "github": "Aayush-Raj07022008",
+      "linkedin": "https://www.linkedin.com/in/aayush-raj-051681374",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 1,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [
+        {
+          "title": "First project",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/127",
+          "number": 127,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-23T17:47:38Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Abhishek Raj Verma",
+      "github": "abhishekrajv7-cmd",
+      "linkedin": "https://www.linkedin.com/feed/",
+      "website": "https://qvic.in/",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Adithya Ramesh",
+      "github": "adithya12ramesh",
+      "linkedin": "https://www.linkedin.com/in/adithya-ramesh-6b5761421",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Aditya Jha",
+      "github": "aditya-jha-develops",
+      "linkedin": "https://linkedin.com/in/aditya-develops/",
+      "website": "https://aditya-develops.vercel.app/",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Aditya Tulo",
+      "github": "Psychoriz",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Akshat Chauhan",
+      "github": "Akshat698",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Aman",
+      "github": "shamkian0326-creator",
+      "linkedin": "https://www.linkedin.com/in/aman-singh-3731772a6",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Amartya Sen Badal",
+      "github": "theamartyasen",
+      "linkedin": "https://www.linkedin.com/in/theamartyasen",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Anshika Indu",
+      "github": "Anshika-Indu",
+      "linkedin": "https://www.linkedin.com/in/anshika-indu-15-11-2008-anshika-indu/",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Anuj Preet",
+      "github": "spawne4",
+      "linkedin": "https://www.linkedin.com/in/anuj-preet-7b56b0421?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Anurag",
+      "github": "anurrag983",
+      "linkedin": "https://www.linkedin.com/in/anurag-singh-42b89a314?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Armaan Saxena",
+      "github": "armaan247",
+      "linkedin": "https://www.linkedin.com/in/armaan-saxena-213870423?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "website": "https://-/",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Arman Sohil Vadhvania",
+      "github": "armanvadhvania1",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Atharva Tukaram Gavhane",
+      "github": "atgavhane96",
+      "linkedin": "https://www.linkedin.com/in/atharva-gavhane-a10872416",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Aviral Srivastava",
+      "github": "wannabeaviral",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Ayaan Khan",
+      "github": "Ayaan-khan01",
+      "linkedin": "https://www.linkedin.com/in/ayaan-khan-94b04a42b",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 1,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [
+        {
+          "title": "Add my info to the students folder",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/121",
+          "number": 121,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-22T08:58:48Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Ayush kumar mahato",
+      "github": "Heisenbrick",
+      "linkedin": "https://www.linkedin.com/in/ayush-mahato-34a032391?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "AYUSHRAJ",
+      "github": "ayush882244-crypto",
+      "linkedin": "https://www.linkedin.com/in/ayush-raj-b7b3522b4",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Dhairya Dev Singh",
+      "github": "Dhairya-Dev-Singh",
+      "linkedin": "https://www.linkedin.com/in/dhairya-dev-singh-0a46973a4/",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "DHARISA SAI VISHAL",
+      "github": "saivishaldharisa-web",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "DILREET KAUR",
+      "github": "Dilreet168",
+      "linkedin": "https://www.linkedin.com/in/dilreet-kaur-36b38a431",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 1,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [
+        {
+          "title": "added code",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/130",
+          "number": 130,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-24T12:47:26Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Divyanshu singh",
+      "github": "divyanshu2000k",
+      "linkedin": "https://www.linkedin.com/in/divyanshu-singh-07669a3a7?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Gandhi ansh ankitbhai",
+      "github": "anshgandhi68-sys",
+      "linkedin": "https://www.linkedin.com/in/ansh-a-gandhi-76257b420?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "H S BHARATH SURYA",
+      "github": "satanonsteroids2024-zzz",
+      "website": "https://studyguard-ai.netlify.app/",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Hari Sri SasiVathana G",
+      "github": "harisrish2512-ht",
+      "linkedin": "https://www.linkedin.com/in/hari-sri-sasivathana-g-653126430",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Harsh Pandey",
+      "github": "harshpandey729",
+      "linkedin": "https://www.linkedin.com/in/harsh-pandey-a9bab0427",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Het ukani",
+      "github": "Cyberhet",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 2,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [
+        {
+          "title": "rustdoc: Fix rendering of cross-crate target_features",
+          "url": "https://github.com/rust-lang/rust/pull/162208",
+          "number": 162208,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-09-02T18:57:17Z",
+          "repo": "rust-lang/rust",
+          "stars": 118378,
+          "forks": 15550,
+          "quality": true
+        },
+        {
+          "title": "Fix/1513 thumbnail generation",
+          "url": "https://github.com/AOSSIE-Org/PictoPy/pull/1518",
+          "number": 1518,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-30T17:40:41Z",
+          "repo": "AOSSIE-Org/PictoPy",
+          "stars": 282,
+          "forks": 678,
+          "quality": true
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Himanshu Giri",
+      "github": "girihimanshu540-prog",
+      "linkedin": "https://www.linkedin.com/in/himanshu-giri-5b3509414?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Ishita Roy",
+      "github": "xishitaxx",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Jayvir Jadeja",
+      "github": "jayvirjadeja008-gif",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Kanishk Patel",
+      "github": "kanishk-codex",
+      "linkedin": "https://www.linkedin.com/in/kanishk-patel-717b29424",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 1,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [
+        {
+          "title": "kanishk.txt",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/115",
+          "number": 115,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-21T06:50:05Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Krishna Chandan Pakki",
+      "github": "krishnachandanofficial-PRO",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "KUNCHAM LASYA KRISHNA",
+      "github": "lasyakrishna",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Liza Dsouza",
+      "github": "Liz0511",
+      "linkedin": "https://www.linkedin.com/in/liza-dsouza-050b05399",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 1,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [
+        {
+          "title": "Add Liz's profile",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/126",
+          "number": 126,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-23T11:40:08Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Manav Dugar",
+      "github": "ManavTheOG",
+      "linkedin": "https://www.linkedin.com/in/manav-dugar-39305a403/",
+      "website": "https://maxer-site.pagesmith.app/",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Manjushree Chabbi",
+      "github": "ManjushreeChabbi",
+      "linkedin": "https://www.linkedin.com/in/manjushree-chabbi-513b9837b/",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Mayank suthar",
+      "github": "Mayanksuthar07",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 2,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [
+        {
+          "title": "docs: document palinode start in quickstart",
+          "url": "https://github.com/phasespace-labs/palinode/pull/160",
+          "number": 160,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-28T18:10:28Z",
+          "repo": "phasespace-labs/palinode",
+          "stars": 38,
+          "forks": 41,
+          "quality": false
+        },
+        {
+          "title": "firstcommit",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/118",
+          "number": 118,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-21T16:35:42Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Mohit Krishna Prasad",
+      "github": "prasadmohitk-afk",
+      "linkedin": "https://www.linkedin.com/in/mohit-prasad-a340a2411?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 1,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [
+        {
+          "title": "Practice session ",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/129",
+          "number": 129,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-24T12:15:53Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "MOHIT KUMAR KOUSHIK",
+      "github": "DRAGON-LORD-MIO-MARASKA",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Musarafa Khatun",
+      "github": "musarafakhatun19",
+      "linkedin": "https://www.linkedin.com/in/musarafa-khatun-a73a63431?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Nikhil Aryan",
+      "github": "nikhilaryan6115-design",
+      "linkedin": "https://www.linkedin.com/in/nikhil-aryan-3ab8a7414/",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Nishpray Singh Thakur",
+      "github": "Nishpraysingh",
+      "linkedin": "https://www.linkedin.com/in/nishpray-singh-thakur-8a8865422",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Om Shukla",
+      "github": "omshukla1b",
+      "linkedin": "https://www.linkedin.com/in/om-shukla-2657b642b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Piushi sharma",
+      "github": "piushisharma04",
+      "linkedin": "https://www.linkedin.com/in/piushi-sharma-a67708431?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "PUSHWANTH R REDDY",
+      "github": "thunder-pushu",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Rajnish Pathak",
+      "github": "rajnishpathak-sketch",
+      "linkedin": "https://www.linkedin.com/in/rajnish-pathak-10304040b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Reva Bharol",
+      "github": "reva572",
+      "linkedin": "https://www.linkedin.com/in/reva-b-030734333/",
+      "website": "https://talksparapp-mm6cqzci.manus.space/",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Sabhya bhargava",
+      "github": "bhargavasabhya-lgtm",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 1,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [
+        {
+          "title": "profile for sabhya",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/120",
+          "number": 120,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-22T08:04:54Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "saisasai veeraballe",
+      "github": "saiveera-007",
+      "linkedin": "https://www.linkedin.com/in/sai-veeraballe-1aaa16409",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 1,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [
+        {
+          "title": "added my name",
+          "url": "https://github.com/NST-DEVFORGE/Welcome_to_opensource/pull/2",
+          "number": 2,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-03T14:48:34Z",
+          "repo": "NST-DEVFORGE/Welcome_to_opensource",
+          "stars": 0,
+          "forks": 5,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Sanjay Singh",
+      "github": "apsian4352-coder",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 1,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [
+        {
+          "title": "my first step",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/119",
+          "number": 119,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-22T04:12:33Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Shambhavi Sharma",
+      "github": "ShambhaviSharma28",
+      "linkedin": "https://www.linkedin.com/in/shambhavi-sharma-b73616377?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Shikhar Kumar Prasad",
+      "github": "shikharprasad47",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Shubhrodeep Sur",
+      "github": "Shubhroo21",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "sravan samudrala",
+      "github": "sravan793",
+      "linkedin": "https://www.linkedin.com/in/sravangupta-samudrala/",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 1,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [
+        {
+          "title": "added homepage",
+          "url": "https://github.com/sravan793/new-website/pull/1",
+          "number": 1,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-27T14:18:24Z",
+          "repo": "sravan793/new-website",
+          "stars": 0,
+          "forks": 0,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Srija Sikly",
+      "github": "SrijaSikly",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Srishti",
+      "github": "srishti-thukran",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Sujal Jangde",
+      "github": "sujaljangde22",
+      "linkedin": "https://www.linkedin.com/in/sujal-jangde-4439753a6?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Sumit lal",
+      "github": "gavi2007",
+      "linkedin": "https://www.linkedin.com/in/sumit-lal-54b80331b/",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Swastik Katiyar",
+      "github": "swastikkatiyar",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Vaibhav Gupta",
+      "github": "vaibholuuu",
+      "linkedin": "https://www.linkedin.com/in/eggsgamemode/",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Vaibhvi",
+      "github": "vaibhvii",
+      "linkedin": "https://www.linkedin.com/in/vaibhvi-kataria-b1259a423?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Vaishnavi Dhakwal",
+      "github": "vaishnavi-dwl",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Vedant Saini",
+      "github": "vasux01",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Vidyanshi Rajwadha",
+      "github": "VDISTHENEXT",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": true
+    },
+    {
+      "name": "Vikas Shukla",
+      "github": "Vik755",
+      "linkedin": "https://www.linkedin.com/in/vikas-shukla-9a1880430?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 1,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [
+        {
+          "title": "vikas29shukla111@gmail.com",
+          "url": "https://github.com/ssagar1999/our-dev-wall/pull/122",
+          "number": 122,
+          "state": "open",
+          "mergedAt": null,
+          "createdAt": "2026-08-22T10:05:50Z",
+          "repo": "ssagar1999/our-dev-wall",
+          "stars": 1,
+          "forks": 169,
+          "quality": false
+        }
+      ],
+      "live": true
+    },
+    {
+      "name": "Yash Panchal",
+      "github": "Yashpanchal8",
+      "prCount": 0,
+      "totalPRs": 0,
+      "openPRs": 0,
+      "closedPRs": 0,
+      "orgs": [],
+      "prs": [],
+      "live": false
+    }
+  ]
+}

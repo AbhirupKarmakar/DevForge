@@ -8,8 +8,10 @@ import {
     CheckCircle2,
     Circle,
     Clock,
+    Github,
     GitPullRequest,
     Lock,
+    LogOut,
     PenLine,
     RefreshCw,
     RotateCcw,
@@ -18,6 +20,16 @@ import {
 } from "lucide-react";
 import { milestones, reflectionTemplate, rules, workbookMeta, ARENA_LABELS, type Arena } from "@/data/pr-workbook";
 import type { JourneyEntry, JourneyRecord, PRState } from "@/lib/pr-journey";
+import type { GithubIdentity } from "@/lib/github-auth";
+
+const SIGN_IN_HREF = "/api/auth/github?next=/learn/open-source";
+
+/** What to say when GitHub sends someone back without a session. */
+const SIGN_IN_OUTCOMES: Record<string, string> = {
+    denied: "Sign-in was cancelled on GitHub, so nothing was shared.",
+    failed: "GitHub sign-in did not complete. Try again.",
+    unconfigured: "GitHub sign-in is not switched on for this site yet.",
+};
 
 const ARENA_STYLES: Record<Arena, string> = {
     workbook: "bg-neutral-500/10 text-neutral-300 border-neutral-500/20",
@@ -46,7 +58,9 @@ type FormState = typeof EMPTY_FORM;
 
 export function PRWorkbook() {
     const [journey, setJourney] = useState<JourneyRecord | null>(null);
+    const [identity, setIdentity] = useState<GithubIdentity | null>(null);
     const [authed, setAuthed] = useState<boolean | null>(null);
+    const [notice, setNotice] = useState<string | null>(null);
     const [openForm, setOpenForm] = useState<number | null>(null);
     const [form, setForm] = useState<FormState>(EMPTY_FORM);
     const [error, setError] = useState<string | null>(null);
@@ -60,12 +74,23 @@ export function PRWorkbook() {
         fetch("/api/pr-journey")
             .then(async (r) => {
                 if (!live) return;
+
+                // GitHub sends people back with ?github=<outcome> when sign-in
+                // did not produce a session. Say so once, then tidy the URL so
+                // a refresh or a shared link does not repeat the message.
+                const outcome = new URLSearchParams(window.location.search).get("github");
+                if (outcome) {
+                    setNotice(SIGN_IN_OUTCOMES[outcome] ?? null);
+                    window.history.replaceState(null, "", window.location.pathname);
+                }
+
                 if (r.status === 401) {
                     setAuthed(false);
                     return;
                 }
                 const data = await r.json();
                 setAuthed(true);
+                setIdentity(data.identity as GithubIdentity);
                 setJourney(data.journey as JourneyRecord);
             })
             .catch(() => live && setAuthed(false));
@@ -149,6 +174,14 @@ export function PRWorkbook() {
         }
     }
 
+    async function signOut() {
+        await fetch("/api/auth/github/logout", { method: "POST" });
+        setIdentity(null);
+        setJourney(null);
+        setOpenForm(null);
+        setAuthed(false);
+    }
+
     async function withdraw(n: number) {
         await fetch(`/api/pr-journey/${n}`, { method: "DELETE" });
         setJourney((prev) => {
@@ -163,23 +196,66 @@ export function PRWorkbook() {
         <div className="min-h-screen bg-transparent text-white pt-4 pb-16">
             <div className="max-w-3xl mx-auto px-4">
                 {/* Progress / sign-in */}
+                {queueSize !== null && (
+                    <Link
+                        href="/dashboard/journey"
+                        className="inline-flex items-center gap-1.5 mb-4 text-xs font-semibold text-cyan-300 bg-cyan-400/10 border border-cyan-400/25 hover:border-cyan-400/60 rounded-lg px-3 py-1.5 transition-colors"
+                    >
+                        <ShieldCheck size={13} />
+                        Sign-off queue
+                        <span className="font-mono text-cyan-400/70">{queueSize} waiting</span>
+                    </Link>
+                )}
+
                 {authed === false ? (
                     <div className="bg-neutral-900/60 border border-neutral-800 rounded-2xl p-5 mb-12">
-                        <div className="font-semibold text-white mb-1">Sign in to start the journey</div>
-                        <p className="text-sm text-neutral-400 leading-relaxed mb-4">
-                            Milestones are tracked on your member account and signed off by a reviewer. Every one is
-                            backed by a GitHub link we check against your username, so what you end up with is a record
-                            somebody else can verify.
+                        <div className="font-semibold text-white mb-1">Start the journey with GitHub</div>
+                        <p className="text-sm text-neutral-400 leading-relaxed mb-2">
+                            Open to anyone with a GitHub account — you do not need to be a club member. Your milestones
+                            are tracked against the account you sign in with, and every one is backed by a link we check
+                            against it, so what you end up with is a record somebody else can verify.
                         </p>
-                        <Link
-                            href="/login"
-                            className="inline-flex items-center gap-2 text-sm font-semibold bg-cyan-400/15 text-cyan-300 border border-cyan-400/30 hover:border-cyan-400/60 rounded-xl px-4 py-2 transition-colors"
+                        <p className="text-xs text-neutral-500 mb-4">
+                            We read your public profile only. No access to your repositories is requested.
+                        </p>
+                        {notice && (
+                            <p className="text-sm text-amber-200/90 bg-amber-500/10 border border-amber-500/25 rounded-xl px-3 py-2 mb-4">
+                                {notice}
+                            </p>
+                        )}
+                        <a
+                            href={SIGN_IN_HREF}
+                            className="inline-flex items-center gap-2 text-sm font-semibold bg-white text-black hover:bg-neutral-200 rounded-xl px-4 py-2 transition-colors"
                         >
-                            Sign in
-                        </Link>
+                            <Github size={16} />
+                            Sign in with GitHub
+                        </a>
                     </div>
                 ) : (
                     <div className="bg-neutral-900/60 border border-neutral-800 rounded-2xl p-5 mb-12">
+                        {identity && (
+                            <div className="flex items-center justify-between gap-3 mb-4 pb-4 border-b border-neutral-800">
+                                <div className="flex items-center gap-2.5 min-w-0">
+                                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                                    <img
+                                        src={identity.avatar}
+                                        alt=""
+                                        width={28}
+                                        height={28}
+                                        className="rounded-full border border-neutral-700 flex-shrink-0"
+                                    />
+                                    <span className="text-sm text-neutral-400 truncate">
+                                        Signed in as <span className="font-mono text-white">@{identity.login}</span>
+                                    </span>
+                                </div>
+                                <button
+                                    onClick={signOut}
+                                    className="inline-flex items-center gap-1 text-xs text-neutral-500 hover:text-neutral-300 transition-colors flex-shrink-0"
+                                >
+                                    <LogOut size={12} /> Sign out
+                                </button>
+                            </div>
+                        )}
                         <div className="flex items-baseline justify-between mb-3">
                             <span className="text-sm text-neutral-400">Milestones signed off</span>
                             <span className="text-sm font-mono text-cyan-300">
@@ -195,19 +271,6 @@ export function PRWorkbook() {
                             />
                         </div>
                         <p className="text-xs text-neutral-500 mt-3">{workbookMeta.cadence}</p>
-
-                        {queueSize !== null && (
-                            <Link
-                                href="/dashboard/journey"
-                                className="inline-flex items-center gap-1.5 mt-4 text-xs font-semibold text-cyan-300 bg-cyan-400/10 border border-cyan-400/25 hover:border-cyan-400/60 rounded-lg px-3 py-1.5 transition-colors"
-                            >
-                                <ShieldCheck size={13} />
-                                Sign-off queue
-                                <span className="font-mono text-cyan-400/70">
-                                    {queueSize} waiting
-                                </span>
-                            </Link>
-                        )}
                     </div>
                 )}
 

@@ -6,9 +6,11 @@ import { milestones } from "@/data/pr-workbook";
 import type { JourneyEntry } from "@/lib/pr-journey";
 
 interface PendingRow {
-    usn: string;
+    /** Journey record id — a GitHub account, not a club USN. */
+    id: string;
     name: string;
-    github?: string;
+    github: string;
+    avatar: string;
     entry: JourneyEntry;
 }
 
@@ -26,21 +28,21 @@ export function JourneyQueue() {
     }, []);
 
     async function decide(row: PendingRow, decision: "sign-off" | "changes-requested") {
-        const key = `${row.usn}:${row.entry.n}`;
+        const key = `${row.id}:${row.entry.n}`;
         setBusy(key);
         setError(null);
         try {
             const response = await fetch("/api/pr-journey/review", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ usn: row.usn, n: row.entry.n, decision, note: notes[key] }),
+                body: JSON.stringify({ id: row.id, n: row.entry.n, decision, note: notes[key] }),
             });
             const data = await response.json();
             if (!response.ok) {
                 setError(data.message ?? "That did not go through.");
                 return;
             }
-            setRows((prev) => prev?.filter((r) => `${r.usn}:${r.entry.n}` !== key) ?? null);
+            setRows((prev) => prev?.filter((r) => `${r.id}:${r.entry.n}` !== key) ?? null);
         } finally {
             setBusy(null);
         }
@@ -48,20 +50,20 @@ export function JourneyQueue() {
 
     /** Confirms the PR is still where the student said it was, at the moment of sign-off. */
     async function recheck(row: PendingRow) {
-        const key = `${row.usn}:${row.entry.n}`;
+        const key = `${row.id}:${row.entry.n}`;
         setBusy(key);
         try {
             const response = await fetch(`/api/pr-journey/${row.entry.n}`, {
                 method: "PATCH",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ usn: row.usn }),
+                body: JSON.stringify({ id: row.id }),
             });
             const data = await response.json();
             if (!response.ok) {
                 setError(data.message ?? "Could not re-check that link.");
                 return;
             }
-            setRows((prev) => prev?.map((r) => (`${r.usn}:${r.entry.n}` === key ? { ...r, entry: data.entry } : r)) ?? null);
+            setRows((prev) => prev?.map((r) => (`${r.id}:${r.entry.n}` === key ? { ...r, entry: data.entry } : r)) ?? null);
         } finally {
             setBusy(null);
         }
@@ -87,14 +89,24 @@ export function JourneyQueue() {
             )}
 
             {rows.map((row) => {
-                const key = `${row.usn}:${row.entry.n}`;
+                const key = `${row.id}:${row.entry.n}`;
                 const spec = milestones.find((m) => m.n === row.entry.n);
                 const { evidence, reflection } = row.entry;
 
                 return (
                     <div key={key} className="bg-neutral-900/40 border border-neutral-800 rounded-2xl p-5">
-                        <div className="flex flex-wrap items-baseline gap-2 mb-3">
+                        <div className="flex flex-wrap items-center gap-2 mb-3">
+                            {/* eslint-disable-next-line @next/next/no-img-element */}
+                            <img src={row.avatar} alt="" width={22} height={22} className="rounded-full border border-neutral-700" />
                             <span className="font-semibold text-white">{row.name}</span>
+                            <a
+                                href={`https://github.com/${row.github}`}
+                                target="_blank"
+                                rel="noreferrer"
+                                className="font-mono text-xs text-neutral-500 hover:text-cyan-300"
+                            >
+                                @{row.github}
+                            </a>
                             <span className="font-mono text-xs text-neutral-500">
                                 PR {String(row.entry.n).padStart(2, "0")} · {spec?.title}
                             </span>

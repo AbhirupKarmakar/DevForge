@@ -17,6 +17,12 @@ export const RATE_LIMITS = {
     login: { limit: 5, windowMs: 15 * 60_000 },
     passwordChange: { limit: 10, windowMs: 15 * 60_000 },
     write: { limit: 60, windowMs: 60_000 },
+    /**
+     * Journey submissions and re-checks. Each one spends GitHub API calls on the
+     * site's shared token, and since anyone with a GitHub account can sign in,
+     * one person looping on submit could starve everyone else's checks.
+     */
+    journeyCheck: { limit: 20, windowMs: 15 * 60_000 },
 } as const satisfies Record<string, RateLimit>;
 
 export interface RateLimitResult {

@@ -1,7 +1,8 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { club, COLLECTIONS } from "@/lib/firebase/collections";
-import { authErrorResponse, getMember, requireUser } from "@/lib/session";
-import { can } from "@/lib/permissions";
+import { authErrorResponse, requireCapability } from "@/lib/session";
+import { requireGithubUser, type GithubIdentity } from "@/lib/github-auth";
+import { RATE_LIMITS, checkRateLimit } from "@/lib/rate-limit";
 import { verifyEvidence } from "@/lib/github-verify";
 import {
     EVIDENCE_RULES,
@@ -12,70 +13,61 @@ import {
     checkKind,
     checkMilestone10,
     emptyJourney,
+    journeyId,
     milestoneExists,
     validateReflection,
     type JourneyEntry,
     type JourneyRecord,
 } from "@/lib/pr-journey";
-import { resolveGithub } from "@/lib/member-github";
 
 export const runtime = "nodejs";
 
 type Params = { params: Promise<{ n: string }> };
 
+async function milestoneFrom(params: Params["params"]): Promise<number | null> {
+    const n = Number((await params).n);
+    return milestoneExists(n) ? n : null;
+}
+
+/** Null when allowed; otherwise the response to send. */
+async function throttle(identity: GithubIdentity): Promise<NextResponse | null> {
+    const limit = await checkRateLimit("journey-check", String(identity.id), RATE_LIMITS.journeyCheck);
+    if (limit.ok) return null;
+    return NextResponse.json(
+        {
+            ok: false,
+            message: `That is a lot of checks in a short time. Try again in ${Math.ceil(limit.retryAfterSeconds / 60)} minutes.`,
+        },
+        { status: 429, headers: { "Retry-After": String(limit.retryAfterSeconds) } },
+    );
+}
+
 /**
  * Submits one milestone: a GitHub link plus the five-field reflection.
  *
- * Everything checkable is checked here rather than trusted — the link resolves,
- * you opened it (or, for milestone 8, you did not), and it sits in the right
- * kind of repository for where you are on the ladder. What a human still has to
- * judge is the reflection, which is why submission lands in `submitted` and a
- * reviewer moves it to `signed-off`.
+ * Open to anyone signed in with GitHub. Everything checkable is checked here
+ * rather than trusted — the link resolves, you opened it (or, for milestone 8,
+ * you did not), and it sits in the right kind of repository for where you are
+ * on the ladder. What a human still has to judge is the reflection, which is
+ * why submission lands in `submitted` and a reviewer moves it to `signed-off`.
  */
 export async function PUT(request: NextRequest, { params }: Params) {
     try {
-        const session = await requireUser();
-        const n = Number((await params).n);
-        if (!milestoneExists(n)) {
-            return NextResponse.json({ ok: false, message: "No such milestone." }, { status: 404 });
-        }
+        const me = await requireGithubUser();
+        const n = await milestoneFrom(params);
+        if (n === null) return NextResponse.json({ ok: false, message: "No such milestone." }, { status: 404 });
 
-        const member = await getMember(session.usn);
-        if (!member) throw new Error(`Session references a missing member: ${session.usn}`);
-
-        const github = await resolveGithub(session.usn, member.github);
-        if (!github) {
-            return NextResponse.json(
-                {
-                    ok: false,
-                    message:
-                        "We could not find your GitHub username on your profile, so the link cannot be checked against you. Add it and try again.",
-                },
-                { status: 409 },
-            );
-        }
-
-        const body = (await request.json()) as { url?: string; reflection?: unknown };
-        const rule = EVIDENCE_RULES[n];
-
+        const body = (await request.json().catch(() => ({}))) as { url?: string; reflection?: unknown };
         const reflection = validateReflection(body.reflection);
-        const evidence = await verifyEvidence(String(body.url ?? ""));
 
-        checkKind(evidence.kind, rule);
-        checkAuthor(evidence.author, rule, github);
-        checkArena(evidence.repo.split("/")[0], rule.arena, github);
-        if (n === 9) checkHardReview(evidence);
-        if (n === 10) checkMilestone10(evidence);
-
-        const ref = club<JourneyRecord>(COLLECTIONS.prJourney).doc(session.usn);
+        const ref = club<JourneyRecord>(COLLECTIONS.prJourney).doc(journeyId(me.id));
         const snap = await ref.get();
-        const record = snap.exists
-            ? (snap.data() as JourneyRecord)
-            : emptyJourney(session.usn, member.name, github);
+        const record = snap.exists ? (snap.data() as JourneyRecord) : emptyJourney(me);
 
         // The ladder is the product, so it is enforced here and not only in the
-        // page that draws the padlocks. A client can post to any milestone it
-        // likes; skipping to 10 in week one has to fail on the server.
+        // page that draws the padlocks. It also runs before the GitHub lookup:
+        // a submission that is going to be refused anyway should not spend the
+        // shared API budget finding that out.
         if (n > 1 && record.entries[String(n - 1)]?.state !== "signed-off") {
             return NextResponse.json(
                 {
@@ -85,14 +77,24 @@ export async function PUT(request: NextRequest, { params }: Params) {
                 { status: 409 },
             );
         }
-
-        const previous = record.entries[String(n)];
-        if (previous?.state === "signed-off") {
+        if (record.entries[String(n)]?.state === "signed-off") {
             return NextResponse.json(
                 { ok: false, message: "That milestone is already signed off. Talk to your reviewer to reopen it." },
                 { status: 409 },
             );
         }
+
+        const throttled = await throttle(me);
+        if (throttled) return throttled;
+
+        const rule = EVIDENCE_RULES[n];
+        const evidence = await verifyEvidence(String(body.url ?? ""));
+
+        checkKind(evidence.kind, rule);
+        checkAuthor({ login: evidence.author, id: evidence.authorId }, rule, me);
+        checkArena(evidence.repo.split("/")[0], rule.arena, me.login);
+        if (n === 9) checkHardReview(evidence);
+        if (n === 10) checkMilestone10(evidence);
 
         const entry: JourneyEntry = {
             n,
@@ -103,7 +105,11 @@ export async function PUT(request: NextRequest, { params }: Params) {
         };
 
         record.entries[String(n)] = entry;
-        record.github = github;
+        // Keep the display fields current: people rename themselves and change
+        // avatars, and the reviewer queue should show who they are now.
+        record.github = me.login;
+        record.name = me.name;
+        record.avatar = me.avatar;
         record.updatedAt = entry.submittedAt;
         await ref.set(record);
 
@@ -120,34 +126,31 @@ export async function PUT(request: NextRequest, { params }: Params) {
  * Re-checks a submission against GitHub and stores what it finds now.
  *
  * A PR is rarely in its final state when it is submitted — it is open on
- * Tuesday and merged on Friday, and the record should say so without the
- * student refiling anything. Only the observed facts move; the reflection and
- * the sign-off are untouched, so a merge cannot launder a milestone a reviewer
+ * Tuesday and merged on Friday, and the record should say so without anyone
+ * refiling anything. Only the observed facts move; the reflection and the
+ * sign-off are untouched, so a merge cannot launder a milestone a reviewer
  * already sent back.
  *
- * Members refresh their own. A reviewer can refresh anyone's, which is what
- * makes the queue trustworthy: the state shown at sign-off is the state now,
- * not the state at submission.
+ * Participants re-check their own, signed in with GitHub. A reviewer re-checks
+ * anyone's by passing the record id, signed in to the club — which is what
+ * makes the queue trustworthy: the state shown at sign-off is the state now.
  */
 export async function PATCH(request: NextRequest, { params }: Params) {
     try {
-        const session = await requireUser();
-        const n = Number((await params).n);
-        if (!milestoneExists(n)) {
-            return NextResponse.json({ ok: false, message: "No such milestone." }, { status: 404 });
-        }
+        const n = await milestoneFrom(params);
+        if (n === null) return NextResponse.json({ ok: false, message: "No such milestone." }, { status: 404 });
 
-        const body = (await request.json().catch(() => ({}))) as { usn?: string };
-        const target = body.usn ?? session.usn;
+        const body = (await request.json().catch(() => ({}))) as { id?: string };
 
-        if (target !== session.usn) {
-            const me = await getMember(session.usn);
-            if (!me || !can(me, "journey:review")) {
-                return NextResponse.json(
-                    { ok: false, message: "You can only re-check your own submissions." },
-                    { status: 403 },
-                );
-            }
+        let target: string;
+        if (body.id) {
+            await requireCapability("journey:review");
+            target = body.id;
+        } else {
+            const me = await requireGithubUser();
+            const throttled = await throttle(me);
+            if (throttled) return throttled;
+            target = journeyId(me.id);
         }
 
         const ref = club<JourneyRecord>(COLLECTIONS.prJourney).doc(target);
@@ -188,10 +191,11 @@ export async function PATCH(request: NextRequest, { params }: Params) {
 /** Withdraws a submission that has not been signed off yet. */
 export async function DELETE(_request: NextRequest, { params }: Params) {
     try {
-        const session = await requireUser();
-        const n = Number((await params).n);
+        const me = await requireGithubUser();
+        const n = await milestoneFrom(params);
+        if (n === null) return NextResponse.json({ ok: false, message: "No such milestone." }, { status: 404 });
 
-        const ref = club<JourneyRecord>(COLLECTIONS.prJourney).doc(session.usn);
+        const ref = club<JourneyRecord>(COLLECTIONS.prJourney).doc(journeyId(me.id));
         const snap = await ref.get();
         if (!snap.exists) return NextResponse.json({ ok: true });
 

@@ -1,6 +1,8 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { club, COLLECTIONS } from "@/lib/firebase/collections";
 import { authErrorResponse, requireCapability } from "@/lib/session";
+import { getGithubSession } from "@/lib/github-auth";
+import { resolveGithub } from "@/lib/member-github";
 import type { JourneyRecord } from "@/lib/pr-journey";
 
 export const runtime = "nodejs";
@@ -9,6 +11,11 @@ export const runtime = "nodejs";
  * Everything waiting on a reviewer, oldest first — a queue, not a dashboard.
  * Reflections are what a reviewer actually reads, so they come down with it
  * rather than behind a second request per entry.
+ *
+ * Participants sign in with GitHub and may not be club members at all;
+ * reviewers are still club members holding `journey:review`, signed in the
+ * club's way. Signing off someone's work is a club responsibility even when
+ * taking the journey is not.
  */
 export async function GET() {
     try {
@@ -18,9 +25,18 @@ export async function GET() {
         const pending = snap.docs
             .flatMap((doc) => {
                 const record = doc.data() as JourneyRecord;
-                return Object.values(record.entries)
+                // Records from before GitHub sign-in were keyed on a USN and
+                // carry no GitHub id; there is nobody to hand feedback back to.
+                if (!record.githubId) return [];
+                return Object.values(record.entries ?? {})
                     .filter((entry) => entry.state === "submitted")
-                    .map((entry) => ({ usn: record.usn, name: record.name, github: record.github, entry }));
+                    .map((entry) => ({
+                        id: doc.id,
+                        name: record.name,
+                        github: record.github,
+                        avatar: record.avatar,
+                        entry,
+                    }));
             })
             .sort((a, b) => a.entry.submittedAt.localeCompare(b.entry.submittedAt));
 
@@ -40,17 +56,17 @@ export async function GET() {
 export async function POST(request: NextRequest) {
     try {
         const { member } = await requireCapability("journey:review");
-        const body = (await request.json()) as {
-            usn?: string;
+        const body = (await request.json().catch(() => ({}))) as {
+            id?: string;
             n?: number;
             decision?: "sign-off" | "changes-requested";
             note?: string;
         };
 
-        const { usn, n, decision } = body;
+        const { id, n, decision } = body;
         const note = body.note?.trim();
 
-        if (!usn || !Number.isInteger(n) || !["sign-off", "changes-requested"].includes(decision ?? "")) {
+        if (!id || !Number.isInteger(n) || !["sign-off", "changes-requested"].includes(decision ?? "")) {
             return NextResponse.json({ ok: false, message: "Bad request." }, { status: 400 });
         }
         if (decision === "changes-requested" && !note) {
@@ -59,18 +75,28 @@ export async function POST(request: NextRequest) {
                 { status: 400 },
             );
         }
-        if (usn === member.usn) {
+
+        const ref = club<JourneyRecord>(COLLECTIONS.prJourney).doc(id);
+        const snap = await ref.get();
+        if (!snap.exists) return NextResponse.json({ ok: false, message: "No journey there." }, { status: 404 });
+
+        const record = snap.data() as JourneyRecord;
+
+        // A reviewer who is also taking the journey must not pass their own
+        // work. Their club record and their GitHub session are separate
+        // identities, so check both routes back to the same person.
+        const reviewerGithub = await resolveGithub(member.usn, member.github);
+        const githubSession = await getGithubSession();
+        const ownRecord =
+            githubSession?.id === record.githubId ||
+            (reviewerGithub !== undefined && reviewerGithub.toLowerCase() === record.github?.toLowerCase());
+        if (ownRecord) {
             return NextResponse.json(
                 { ok: false, message: "You cannot sign off your own milestone." },
                 { status: 403 },
             );
         }
 
-        const ref = club<JourneyRecord>(COLLECTIONS.prJourney).doc(usn);
-        const snap = await ref.get();
-        if (!snap.exists) return NextResponse.json({ ok: false, message: "No journey there." }, { status: 404 });
-
-        const record = snap.data() as JourneyRecord;
         const entry = record.entries[String(n)];
         if (!entry) return NextResponse.json({ ok: false, message: "Nothing submitted." }, { status: 404 });
 

@@ -18,7 +18,7 @@ interface GithubPR {
     state: string;
     merged_at: string | null;
     created_at: string;
-    user: { login: string } | null;
+    user: { login: string; id: number } | null;
 }
 
 /**
@@ -66,7 +66,8 @@ export async function verifyEvidence(url: string): Promise<Evidence> {
 
     const data = (await response.json()) as GithubPR;
     const author = data.user?.login;
-    if (!author) throw new EvidenceError("GitHub did not report an author for that link.");
+    const authorId = data.user?.id;
+    if (!author || !authorId) throw new EvidenceError("GitHub did not report an author for that link.");
 
     const state: PRState = data.merged_at ? "merged" : data.state === "closed" ? "closed" : "open";
 
@@ -77,6 +78,7 @@ export async function verifyEvidence(url: string): Promise<Evidence> {
         number: data.number ?? ref.number,
         title: data.title,
         author,
+        authorId,
         state,
         reviewRounds: ref.kind === "pr" ? await countReviewRounds(ref.owner, ref.repo, ref.number) : 0,
         openedAt: data.created_at,

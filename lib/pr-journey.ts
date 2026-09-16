@@ -1,4 +1,5 @@
 import { milestones, type Arena } from "@/data/pr-workbook";
+import type { GithubIdentity } from "@/lib/github-auth";
 
 /**
  * The 10 PR Journey, as tracked state.
@@ -59,6 +60,8 @@ export interface Evidence {
     number: number;
     title: string;
     author: string;
+    /** GitHub's numeric id for the author, so a later username change cannot orphan the proof. */
+    authorId: number;
     state: PRState;
     /** Distinct review submissions. Milestone 9 wants three or more. */
     reviewRounds: number;
@@ -78,19 +81,42 @@ export interface JourneyEntry {
     reviewerNote?: string;
 }
 
+/**
+ * One person's journey, keyed on their GitHub account.
+ *
+ * It used to be keyed on the club USN, which tied the workbook to club
+ * membership. Anyone can take it now, and the only identity every participant
+ * shares is GitHub — the numeric id specifically, since usernames can be
+ * renamed and a rename must not orphan a semester of signed-off work.
+ */
 export interface JourneyRecord {
-    usn: string;
+    githubId: number;
+    /** Login and profile as of the most recent submission; display only. */
+    github: string;
     name: string;
-    github?: string;
+    avatar: string;
     /** Keyed by milestone number as a string, because Firestore keys are strings. */
     entries: Record<string, JourneyEntry>;
     startedAt: string;
     updatedAt: string;
 }
 
-export function emptyJourney(usn: string, name: string, github?: string): JourneyRecord {
+/** Firestore document id for a participant. Prefixed so it can never collide with a USN. */
+export function journeyId(githubId: number): string {
+    return `gh_${githubId}`;
+}
+
+export function emptyJourney(identity: GithubIdentity): JourneyRecord {
     const now = new Date().toISOString();
-    return { usn, name, github, entries: {}, startedAt: now, updatedAt: now };
+    return {
+        githubId: identity.id,
+        github: identity.login,
+        name: identity.name,
+        avatar: identity.avatar,
+        entries: {},
+        startedAt: now,
+        updatedAt: now,
+    };
 }
 
 export function signedOffCount(record: JourneyRecord | null): number {
@@ -164,16 +190,24 @@ export function checkArena(owner: string, arena: Arena, memberGithub?: string): 
     }
 }
 
-export function checkAuthor(prAuthor: string, rule: EvidenceRule, memberGithub: string): void {
-    const author = prAuthor.toLowerCase();
-    const mine = memberGithub.toLowerCase();
+/**
+ * Compares GitHub ids, not usernames. The signed-in id is proven by OAuth, and
+ * ids survive renames, so neither a rename nor a look-alike login can pass as
+ * someone else's work.
+ */
+export function checkAuthor(
+    author: { login: string; id: number },
+    rule: EvidenceRule,
+    me: { login: string; id: number },
+): void {
+    const isMine = author.id === me.id;
 
-    if (rule.author === "self" && author !== mine) {
+    if (rule.author === "self" && !isMine) {
         throw new EvidenceError(
-            `That was opened by @${prAuthor}, not @${memberGithub}. Link your own work for this milestone.`,
+            `That was opened by @${author.login}, not @${me.login}. Link your own work for this milestone.`,
         );
     }
-    if (rule.author === "other" && author === mine) {
+    if (rule.author === "other" && isMine) {
         throw new EvidenceError(
             "Milestone 8 is about reviewing someone else's work — link the PR you reviewed, not one you wrote.",
         );

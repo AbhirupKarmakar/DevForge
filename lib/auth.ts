@@ -21,7 +21,7 @@ export type MemberStatus = "pending" | "approved" | "rejected";
  * Required, with no fallback. A default secret would let anyone mint admin
  * tokens against a deployment where the variable was simply forgotten.
  */
-function secret(): string {
+export function secret(): string {
     const value = process.env.JWT_SECRET;
     if (!value || value.length < 32) {
         throw new Error(

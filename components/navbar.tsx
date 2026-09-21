@@ -76,6 +76,7 @@ const menus: { label: string; sections: NavGroupSection[] }[] = [
             {
                 items: [
                     { name: "Learn", href: "/learn" },
+                    { name: "PR Workbook", href: "/learn/open-source" },
                     { name: "Blog", href: "/blog" },
                 ],
             },

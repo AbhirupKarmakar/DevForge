@@ -12,6 +12,10 @@ export interface Milestone {
     /** Asked in addition to the five standard reflection fields. */
     reflect: string;
     est: string;
+    /** The process, in order. Text between backticks renders as code. */
+    steps: string[];
+    /** Where the work happens, or where to go looking for it. */
+    links?: { label: string; href: string }[];
 }
 
 export const ARENA_LABELS: Record<Arena, string> = {
@@ -37,10 +41,11 @@ export const milestones: Milestone[] = [
     {
         n: 1,
         title: "Sign the workbook",
-        goal: "Open a pull request against this workbook adding your own entry. Your first PR is to us, not to a stranger.",
+        goal: "Open a pull request to the NST-DEVFORGE/workbook repo that adds your own signature file. Your first PR is to us, not to a stranger.",
         arena: "workbook",
         done: [
             "You worked on a branch, not on main — your PR shows one file changed, not forty",
+            "The Validate signature check is green",
             "A senior member left at least one review comment",
             "You pushed a follow-up commit that addressed it (not a new PR)",
             "Merged",
@@ -48,6 +53,24 @@ export const milestones: Milestone[] = [
         trap: "Committing to main on your fork, then wondering why the PR contains everyone else's work. If your diff has files you did not touch, close it and start the branch again.",
         reflect: "Which part of fork → branch → commit → PR did you have to look up? Be honest — everyone looks something up here.",
         est: "One evening",
+        steps: [
+            "Open the workbook repo (link below) and read its README once, top to bottom.",
+            "Click Fork. You now own a copy at `github.com/<you>/workbook`.",
+            "Clone your fork, not ours: `git clone https://github.com/<you>/workbook.git`, then `cd workbook`.",
+            "Make a branch before touching anything: `git checkout -b sign/<your-github-username>`.",
+            "Copy the template to a file named after your exact GitHub username: `cp signatures/_template.md signatures/<your-github-username>.md`. Case matters.",
+            "Fill it in: your name as the heading, then Batch, one honest line for I'm here to, and One thing I've built (\"nothing yet\" is fine). Keep the `- **GitHub:** @<your-github-username>` line exactly — the automated check reads it.",
+            "Commit and push: `git add signatures/<your-github-username>.md`, then `git commit -m 'Sign the workbook: <your name>'`, then `git push -u origin sign/<your-github-username>`.",
+            "On GitHub, click Compare & pull request. Base: `NST-DEVFORGE/workbook` · `main`. Head: your fork · your branch. Files changed must show exactly one file. Fill in the PR template.",
+            "Wait for the Validate signature check. If it is red, open its log — it says exactly what to fix.",
+            "Post the PR link in the club group and ask a senior member to review.",
+            "Fix what the reviewer asks for on the same branch, commit, push. The PR updates by itself — do not open a second one.",
+            "Once it is merged, paste the PR URL (`https://github.com/NST-DEVFORGE/workbook/pull/<number>`) into milestone 1 below and write your reflection.",
+        ],
+        links: [
+            { label: "Sign here: NST-DEVFORGE/workbook", href: "https://github.com/NST-DEVFORGE/workbook" },
+            { label: "Signature template", href: "https://github.com/NST-DEVFORGE/workbook/blob/main/signatures/_template.md" },
+        ],
     },
     {
         n: 2,
@@ -63,6 +86,21 @@ export const milestones: Milestone[] = [
         trap: "Picking something too big because it sounded more impressive. If your diff passes 100 lines at milestone 2, you chose wrong — split it or pick again.",
         reflect: "How long between understanding the bug and having a fix? Where did that time actually go — reading, setup, or typing?",
         est: "Two to four evenings",
+        steps: [
+            "Browse the DevForge repos and their open issues. Look for `good first issue`, or something small you have hit yourself on the portal.",
+            "If there is no issue for it, open one: what is wrong, where, and how you would fix it.",
+            "Comment asking to be assigned, and wait until a maintainer assigns you. No code before that.",
+            "Fork, clone, and get the project running locally (`npm install`, then `npm run dev` for the portal). Setup is part of the milestone.",
+            "Branch off the latest `main`: `git checkout -b fix/<short-description>`.",
+            "Make the smallest change that fixes it — under ~50 lines. Run `npm run lint` and the build before pushing.",
+            "Open the PR with `Fixes #<issue number>` in the description, a one-line summary, and a screenshot if anything visible changed.",
+            "Wait for CI to go green. If it fails, read the log and fix it yourself.",
+            "Address the review on the same branch until it is merged, then submit the PR URL here.",
+        ],
+        links: [
+            { label: "DevForge issues", href: "https://github.com/NST-DEVFORGE/DevForge/issues" },
+            { label: "All DevForge repos", href: "https://github.com/NST-DEVFORGE" },
+        ],
     },
     {
         n: 3,
@@ -79,6 +117,19 @@ export const milestones: Milestone[] = [
         trap: "\"It doesn't work.\" Also: filing before searching. Being a duplicate is fine if you say what you searched for; being unreproducible is not.",
         reflect: "Paste the maintainer's first reply verbatim. What did it assume you already knew?",
         est: "About a week of watching one repo",
+        steps: [
+            "Pick one outside project you actually use, or one from our starter list, and plan to stay in it for several milestones.",
+            "Read its README, CONTRIBUTING.md and issue templates before anything else.",
+            "Use the project until something breaks, or reproduce an open bug on the latest release.",
+            "Search open and closed issues for it. Note the search terms you used and the closest issue you found.",
+            "Cut the reproduction down to the fewest steps that still show the bug.",
+            "File the issue using their template: version, OS, commit SHA, numbered steps, expected vs. actual as separate sections, and a link to the closest existing issue.",
+            "Watch it and reply promptly to any question. Once a maintainer responds — even with 'duplicate' — submit the issue URL here.",
+        ],
+        links: [
+            { label: "Starter repos we recommend", href: "/learn#starter-repos" },
+            { label: "Search good first issues", href: "https://github.com/search?q=label%3A%22good+first+issue%22+state%3Aopen&type=issues" },
+        ],
     },
     {
         n: 4,
@@ -94,6 +145,18 @@ export const milestones: Milestone[] = [
         trap: "Writing a test that passes even when the feature is broken. If you did not watch it fail, you did not write a test — you wrote a comment that takes 40ms to run.",
         reflect: "What did reading the test suite tell you about this codebase that reading the source did not?",
         est: "About a week",
+        steps: [
+            "Stay in the same project. Clone it and get the full test suite passing locally before you change anything.",
+            "Find behaviour with no test: run coverage if the project has it, or read a module and then look for its test file.",
+            "Read three or four existing tests and copy their structure, naming and helpers exactly.",
+            "Write your test and watch it pass.",
+            "Break the source line it covers on purpose and watch the test fail. Copy that failure output for your reflection, then revert.",
+            "Commit only the test file(s), open a PR titled something like `test: cover <behaviour>`, and explain what is now covered.",
+            "Get CI green, respond to review, then submit the PR URL here.",
+        ],
+        links: [
+            { label: "Starter repos we recommend", href: "/learn#starter-repos" },
+        ],
     },
     {
         n: 5,
@@ -109,6 +172,17 @@ export const milestones: Milestone[] = [
         trap: "Opening the PR before commenting on the issue. Two people silently fixing the same bug is how contributors burn out and how maintainers stop labelling issues for beginners.",
         reflect: "What was the actual root cause, and what did you believe it was during the first hour?",
         est: "About two weeks",
+        steps: [
+            "Take the issue you filed at milestone 3, or a `good first issue` in the same project.",
+            "Comment on it: say what you think the cause is and how you would fix it, and ask to take it.",
+            "Wait for a maintainer to reply. If someone else is already on it, pick a different issue.",
+            "Write a failing test that reproduces the bug first, then write the fix that makes it pass.",
+            "Open the PR with `Fixes #<issue number>`, the root cause in one or two sentences, and how you tested it.",
+            "Respond to every review comment — change the code or explain why not — until it is merged or closed. Then submit the PR URL here.",
+        ],
+        links: [
+            { label: "Search good first issues", href: "https://github.com/search?q=label%3A%22good+first+issue%22+state%3Aopen&type=issues" },
+        ],
     },
     {
         n: 6,
@@ -123,6 +197,14 @@ export const milestones: Milestone[] = [
         trap: "This is the milestone that looks easy and is not. If you cannot point at the hour you were stuck, you have not earned it yet — go back and finish 4.",
         reflect: "What did the existing docs assume about the reader that turned out to be untrue for you?",
         est: "Three to five days",
+        steps: [
+            "Go back to your notes from milestones 4 and 5 and find the moment you were stuck the longest.",
+            "Find where the docs should have explained it: the README, the docs site, a docstring, CONTRIBUTING.md.",
+            "For anything larger than a paragraph, open an issue first proposing the change.",
+            "Write it for the person you were that day: a worked example, a new section, or a rewrite of the confusing part.",
+            "Open the PR and link the code or issue that confused you. Say who the change is for.",
+            "Respond to the maintainer's feedback, then submit the PR URL here.",
+        ],
     },
     {
         n: 7,
@@ -138,6 +220,14 @@ export const milestones: Milestone[] = [
         trap: "Building first and asking after. Second trap: the unsolicited refactor. If your PR title starts with 'refactor' and nobody asked for it, expect it closed. Refactor when a reviewer asks, inside the PR they asked in.",
         reflect: "What did the maintainer change about your proposal before agreeing to it?",
         est: "Three to four weeks",
+        steps: [
+            "Find a missing feature in the same project — ideally one users have already asked for in issues.",
+            "Open an issue or discussion proposing it: the problem, the proposed behaviour, and what is out of scope.",
+            "Wait for a maintainer to agree. Adjust the scope they push back on — that negotiation is the milestone.",
+            "Build only the agreed scope. Add tests and docs as the project expects.",
+            "Open the PR linking the conversation, and state which parts of the agreed scope it covers.",
+            "Keep engaging on review until it is merged, or open with a maintainer actively reviewing it. Then submit the PR URL here.",
+        ],
     },
     {
         n: 8,
@@ -152,6 +242,17 @@ export const milestones: Milestone[] = [
         trap: "Rubber-stamping, and its mirror image — nitpicking whitespace and naming that a linter already handles. Both tell the author you did not read it.",
         reflect: "What did you fail to understand in their code, and did you say so out loud in the review?",
         est: "About a week",
+        steps: [
+            "Club review: pick an open PR on a DevForge repo, check out the branch locally and run it.",
+            "Stranger review: pick an open PR in your outside project, in an area you now know.",
+            "Read the linked issue first so you know what the PR is meant to do.",
+            "Leave at least one specific, actionable comment on a line of code, and one real question about something you did not understand.",
+            "Say in the review whether you ran the code or only read it.",
+            "Submit the stranger's PR URL here (it must be outside DevForge), and put both review links in your reflection.",
+        ],
+        links: [
+            { label: "Open DevForge PRs", href: "https://github.com/NST-DEVFORGE/DevForge/pulls" },
+        ],
     },
     {
         n: 9,
@@ -166,6 +267,13 @@ export const milestones: Milestone[] = [
         trap: "Arguing, or ghosting. They end the same way, and maintainers remember both.",
         reflect: "Quote the harshest piece of feedback you received. Was it right? What would you tell yourself the day before you opened that PR?",
         est: "However long it takes",
+        steps: [
+            "This one is not planned — it happens to one of your PRs. Any PR from milestone 5 onward can count.",
+            "When a review pushes back, answer every comment: change the code, or explain your reasoning once.",
+            "If the answer is still no after the second round, accept it. Thank them, and close or narrow the PR.",
+            "Never go quiet for more than a few days in an active review. If you need time, say so.",
+            "Once it reaches three or more rounds, or gets closed, submit the PR URL and write the reflection honestly.",
+        ],
     },
     {
         n: 10,
@@ -180,6 +288,14 @@ export const milestones: Milestone[] = [
         trap: "Choosing the largest diff instead of the one you understand best. Nobody in an interview counts your lines.",
         reflect: "This is your interview answer. Write it as one, out loud, and time yourself.",
         est: "The rest of the semester",
+        steps: [
+            "Choose the contribution you understand best from the project you have stayed in — not the biggest one.",
+            "Make sure it is merged and has shipped in a release or a release branch.",
+            "Write down the root cause, the approaches you rejected and why, and what a reviewer caught that you missed.",
+            "Build a 5-minute talk: the problem, the investigation, the fix, the review.",
+            "Present it at a club session and take questions.",
+            "Submit the PR URL and write your reflection as your interview answer.",
+        ],
     },
 ];
 

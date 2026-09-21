@@ -192,7 +192,7 @@ export default function LearnPage() {
                 </motion.div>
 
                 {/* Real starter repos */}
-                <section className="mt-20">
+                <section id="starter-repos" className="mt-20 scroll-mt-28">
                     <div className="mb-8">
                         <h2 className="text-2xl font-bold text-white flex items-center gap-2 mb-2">
                             <GitPullRequest size={22} className="text-cyan-400" /> Your first PRs — real, active repos

@@ -10,6 +10,10 @@ const nextConfig = {
     outputFileTracingIncludes: {
         "/api/admin/offer-letter": ["./public/logo.png"],
     },
+    // Short, shareable link to the 10 PR Journey workbook.
+    async redirects() {
+        return [{ source: "/workbook", destination: "/learn/open-source", permanent: false }];
+    },
     experimental: {
         // Keep the client-side router cache for already-visited routes so going
         // back to a page is instant instead of re-rendering on the server (and

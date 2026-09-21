@@ -6,10 +6,13 @@ import { motion } from "framer-motion";
 import {
     AlertTriangle,
     CheckCircle2,
+    ChevronDown,
     Circle,
     Clock,
+    ExternalLink,
     Github,
     GitPullRequest,
+    ListOrdered,
     Lock,
     LogOut,
     PenLine,
@@ -55,6 +58,19 @@ const EMPTY_FORM = {
 };
 
 type FormState = typeof EMPTY_FORM;
+
+/** Renders `backticked` spans in a step as inline code. */
+function withCode(text: string) {
+    return text.split("`").map((part, i) =>
+        i % 2 ? (
+            <code key={i} className="font-mono [font-variant-ligatures:none] text-[12.5px] text-cyan-200 bg-neutral-800/80 px-1.5 py-0.5 rounded">
+                {part}
+            </code>
+        ) : (
+            part
+        ),
+    );
+}
 
 export function PRWorkbook() {
     const [journey, setJourney] = useState<JourneyRecord | null>(null);
@@ -344,6 +360,39 @@ export function PRWorkbook() {
                                             {m.title}
                                         </h3>
                                         <p className="text-sm text-neutral-400 leading-relaxed mb-4">{m.goal}</p>
+                                        <details className="group/steps mb-4 border border-neutral-700/50 rounded-xl bg-neutral-900/40">
+                                            <summary className="cursor-pointer select-none list-none flex items-center gap-2 px-3 py-2.5 text-sm font-medium text-cyan-300 hover:text-cyan-200">
+                                                <ListOrdered size={15} /> How to do it · {m.steps.length} steps
+                                                <ChevronDown size={14} className="ml-auto transition-transform group-open/steps:rotate-180" />
+                                            </summary>
+                                            <ol className="px-3 pb-3 space-y-2">
+                                                {m.steps.map((step, i) => (
+                                                    <li key={i} className="flex gap-2.5 text-sm text-neutral-300">
+                                                        <span className="flex-shrink-0 w-5 h-5 rounded-full bg-cyan-400/10 text-cyan-300 text-[11px] font-mono flex items-center justify-center mt-0.5">
+                                                            {i + 1}
+                                                        </span>
+                                                        <span className="leading-relaxed min-w-0 break-words">{withCode(step)}</span>
+                                                    </li>
+                                                ))}
+                                            </ol>
+                                            {m.links && (
+                                                <div className="flex flex-wrap gap-2 px-3 pb-3">
+                                                    {m.links.map((l) => {
+                                                        const external = l.href.startsWith("http");
+                                                        return (
+                                                            <a
+                                                                key={l.href}
+                                                                href={l.href}
+                                                                {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                                                                className="inline-flex items-center gap-1.5 text-sm text-cyan-300 hover:text-cyan-200 border border-cyan-400/30 hover:border-cyan-400/60 rounded-lg px-3 py-1.5 transition-colors"
+                                                            >
+                                                                {l.label} {external && <ExternalLink size={12} />}
+                                                            </a>
+                                                        );
+                                                    })}
+                                                </div>
+                                            )}
+                                        </details>
 
                                         <div className="text-xs uppercase tracking-wider text-neutral-500 mb-2">Done when</div>
                                         <ul className="space-y-1.5 mb-4">

@@ -10,6 +10,15 @@ const nextConfig = {
     outputFileTracingIncludes: {
         "/api/admin/offer-letter": ["./public/logo.png"],
     },
+    // Hosts that next/image may optimise. github.com/<user>.png redirects to
+    // avatars.githubusercontent.com, so both are needed.
+    images: {
+        remotePatterns: [
+            { protocol: "https", hostname: "github.com" },
+            { protocol: "https", hostname: "avatars.githubusercontent.com" },
+            { protocol: "https", hostname: "images.unsplash.com" },
+        ],
+    },
     // Short, shareable link to the 10 PR Journey workbook.
     async redirects() {
         return [{ source: "/workbook", destination: "/learn/open-source", permanent: false }];

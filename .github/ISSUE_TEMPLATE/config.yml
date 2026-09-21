@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Signing the workbook (10 PR Journey, milestone 1)
+    url: https://github.com/NST-DEVFORGE/workbook
+    about: Your first PR goes to the workbook repo, not here.

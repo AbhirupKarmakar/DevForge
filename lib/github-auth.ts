@@ -115,6 +115,9 @@ export function statesMatch(expected: string | undefined, received: string | nul
  */
 export function safeNext(next: string | null | undefined, fallback = "/learn/open-source"): string {
     if (!next || !next.startsWith("/") || next.startsWith("//") || next.includes("\\")) return fallback;
+    // Browsers strip tabs and newlines from URLs, so "/\t/evil.com" would become
+    // "//evil.com" — a protocol-relative redirect off-site.
+    if (/[\u0000-\u001f\u007f]/.test(next)) return fallback;
     return next;
 }
 

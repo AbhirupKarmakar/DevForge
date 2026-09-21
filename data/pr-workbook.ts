@@ -89,12 +89,12 @@ export const milestones: Milestone[] = [
         steps: [
             "Browse the DevForge repos and their open issues. Look for `good first issue`, or something small you have hit yourself on the portal.",
             "If there is no issue for it, open one: what is wrong, where, and how you would fix it.",
-            "Comment asking to be assigned, and wait until a maintainer assigns you. No code before that.",
-            "Fork, clone, and get the project running locally (`npm install`, then `npm run dev` for the portal). Setup is part of the milestone.",
+            "Comment `/assign` on the issue. A bot assigns you if it is free: one open issue per person, and `/unassign` hands it back. No code before you are assigned.",
+            "Fork the repo on GitHub, clone your fork, and get it running locally (`npm install`, then `npm run dev`). Setup is part of the milestone.",
             "Branch off the latest `main`: `git checkout -b fix/<short-description>`.",
-            "Make the smallest change that fixes it — under ~50 lines. Run `npm run lint` and the build before pushing.",
-            "Open the PR with `Fixes #<issue number>` in the description, a one-line summary, and a screenshot if anything visible changed.",
-            "Wait for CI to go green. If it fails, read the log and fix it yourself.",
+            "Make the smallest change that fixes it — under ~50 lines. Run `npm run lint`, `npm test` and `npm run build` before pushing: they are exactly what CI runs.",
+            "Open the PR from your fork into `NST-DEVFORGE/DevForge` · `main` (\"compare across forks\"), with `Fixes #<issue number>`, a one-line summary, and a screenshot if anything visible changed.",
+            "Wait for CI (Lint, Test, Type-check & build) to go green. If a check fails, open its log and fix it yourself.",
             "Address the review on the same branch until it is merged, then submit the PR URL here.",
         ],
         links: [

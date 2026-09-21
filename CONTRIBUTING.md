@@ -7,8 +7,9 @@ This repo is the club's website and member portal at [devforge.club](https://www
 ## 1. Pick an issue
 
 - Browse [`good first issue`](https://github.com/NST-DEVFORGE/DevForge/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22). Each one names the file, says what "done" means, and estimates the diff size.
-- Comment **"I'd like to take this"** and **wait to be assigned**. No code before that. It stops two people fixing the same thing.
-- One issue at a time. If you go quiet for a week, it gets unassigned so someone else can pick it up.
+- Comment **`/assign`** on it. A bot assigns you straight away if it's free. That's your go-ahead: no code before it, so two people never fix the same thing.
+- **One issue at a time.** The bot won't assign you a second one while you have an open issue. Finish it, or comment **`/unassign`** to hand it back.
+- If you go quiet on an assigned issue for over a week, a maintainer may unassign you so someone else can pick it up.
 - Found something that isn't listed? Open an issue with the *Improvement* or *Bug report* template first.
 
 ## 2. Set up

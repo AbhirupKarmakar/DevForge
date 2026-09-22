@@ -15,7 +15,7 @@ export const members: Member[] = [
     { usn: "2102508703", name: "Abhijit Saha", github: "AbhijitSaha-coder", linkedin: "https://www.linkedin.com/in/abhijit-saha-211621379" },
     { usn: "2102508710", name: "Anant Sharma", github: "anant2526", linkedin: "https://www.linkedin.com/in/anant-sharma-8119b837b" },
     { usn: "2102508727", name: "Bhavesh Sharma", github: "bhavesh-210", linkedin: "https://www.linkedin.com/in/bhavesh-sharma-405831373/" },
-    { usn: "2102508741", name: "Dhruv Mehta", github: "zenowinged", linkedin: "https://www.linkedin.com/in/dhruv-mehta-3ba4923b2" },
+    { usn: "2102508741", name: "Dhruv Mehta", github: "dhhhhruv", linkedin: "https://www.linkedin.com/in/dhruv-mehta-3ba4923b2" },
     { usn: "2102508742", name: "Dushyant Acharya", github: "Dotify71", linkedin: "https://www.linkedin.com/in/dushyant-acharya-243205377/" },
     { usn: "2102508748", name: "Geetansh Goyal", github: "geetxnshgoyal", linkedin: "https://www.linkedin.com/in/geetanshgoyal" },
     { usn: "2102508762", name: "Kumari Shristi", github: "Shristibot", linkedin: "https://www.linkedin.com/in/shristishankar" },

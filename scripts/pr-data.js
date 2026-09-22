@@ -7,7 +7,7 @@ const TEAM_MEMBERS = [
     { name: 'Abhijit Saha', github: 'AbhijitSaha-coder' },
     { name: 'Anant Sharma', github: 'anant2526' },
     { name: 'Bhavesh Sharma', github: 'bhavesh-210' },
-    { name: 'Dhruv Mehta', github: 'zenowinged' },
+    { name: 'Dhruv Mehta', github: 'dhhhhruv' },
     { name: 'Geetansh Goyal', github: 'geetxnshgoyal' },
     { name: 'Lay Shah', github: 'Layyzyy' },
     { name: 'Luvya Rana', github: 'luvyarana' },

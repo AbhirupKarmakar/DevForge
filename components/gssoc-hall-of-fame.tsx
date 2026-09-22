@@ -11,7 +11,7 @@ import { cohortFromParam } from "@/lib/cohorts";
 const MEMBERS = [
     { name: "Nishtha Agarwal",   id: "fee316f8-c062-41ac-a554-14b82a81fff0", github: "nishtha-agarwal-211" },
     { name: "Unnati Jaiswal",    id: "5459dca0-e005-4eb4-a490-043675e73368", github: "unnati-jaiswal24" },
-    { name: "Dhruv Mehta",       id: "",                                       github: "zenowinged" },
+    { name: "Dhruv Mehta",       id: "",                                       github: "dhhhhruv" },
     { name: "Mahaveer Jain",     id: "d3079ef9-79e4-4887-82eb-e19c6af2fc67", github: "Mahaveerjain-18" },
     { name: "Lay Shah",          id: "06b49d9c-675c-4561-a811-47377baadf15", github: "Layyzyyy" },
     { name: "Sahitya Singh",     id: "05ba7e81-1388-4c3b-9711-6815a70fa5be", github: "sahitya0xsingh" },

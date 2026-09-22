@@ -40,7 +40,7 @@ export const council: CouncilMember[] = [
         name: "Dhruv Mehta",
         usn: "2102508741",
         email: "dhruv@devforge.club",
-        github: "zenowinged",
+        github: "dhhhhruv",
         remit: "Governance, documentation, and internal communication.",
     },
     {

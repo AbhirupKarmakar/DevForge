@@ -102,7 +102,7 @@ export function OpenSourceImpact() {
 
     // Name mapping for GSSoC-only members (snapshot only has github handles)
     const gssocNameMap: Record<string, string> = {
-        'zenowinged': 'Dhruv Mehta',
+        'dhhhhruv': 'Dhruv Mehta',
         'mahaveerjain-18': 'Mahaveer Jain',
         'layyzyyy': 'Lay Shah',
         'adhikaryrachana00428-hash': 'Rachana Adhikary',

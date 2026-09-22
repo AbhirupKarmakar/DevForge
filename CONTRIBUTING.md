@@ -61,7 +61,7 @@ If you only see branch dropdowns, click **compare across forks**. Never pick `ma
 
 ## 5. Review
 
-- A maintainer reviews it. Reply to **every** comment: change the code, or explain your reasoning once.
+- Two members of the governance council are requested as reviewers automatically, and one approval is needed to merge. Reply to **every** comment: change the code, or explain your reasoning once.
 - Push follow-up commits to the **same branch**. Don't close the PR and open a new one.
 - When it's merged, log the PR URL on milestone 2 of [the workbook](https://www.devforge.club/workbook) and write your reflection within 48 hours.
 

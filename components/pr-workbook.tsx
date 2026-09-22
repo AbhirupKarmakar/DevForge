@@ -478,8 +478,8 @@ export function PRWorkbook() {
                                             </div>
                                         )}
 
-                                        {/* Submit */}
-                                        {authed && !done && (
+                                        {/* Submit: not while a submission is waiting on a reviewer */}
+                                        {authed && !done && entry?.state !== "submitted" && (
                                             <div className="mt-3">
                                                 {!unlocked ? (
                                                     <p className="text-xs text-neutral-600">

@@ -249,6 +249,13 @@ const WORD_CAPS: Record<keyof Pick<Reflection, "tried" | "broke" | "differently"
     differently: 60,
 };
 
+/** Same labels as the reflection form, so a too-long answer says which box to cut. */
+const WORD_CAP_LABELS: Record<keyof typeof WORD_CAPS, string> = {
+    tried: "What I tried",
+    broke: "What broke",
+    differently: "What I would do differently",
+};
+
 function words(text: string): number {
     return text.trim().split(/\s+/).filter(Boolean).length;
 }
@@ -279,9 +286,12 @@ export function validateReflection(input: unknown): Reflection {
     };
 
     for (const [key, cap] of Object.entries(WORD_CAPS)) {
-        const count = words(reflection[key as keyof typeof WORD_CAPS]);
+        const field = key as keyof typeof WORD_CAPS;
+        const count = words(reflection[field]);
         if (count > cap) {
-            throw new EvidenceError(`That field is capped at ${cap} words — yours is ${count}. Cut it down.`);
+            throw new EvidenceError(
+                `"${WORD_CAP_LABELS[field]}" is capped at ${cap} words — yours is ${count}. Cut it down.`,
+            );
         }
     }
     if (words(reflection.broke) < 5) {
